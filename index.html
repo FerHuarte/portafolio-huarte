@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head>  
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./css/estilos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -29,15 +33,21 @@
     </header>
  <!--Hero-->
 <main>
+    
     <div id="hero">
-        <div id="hero__title">
-        Diseñadora de <span id="fontcolorblue">productos digitales</span> marketing digital y <span id="fontcolorblue">tiendas en línea</span>
+    <div id="hero__title">      
+    <span id="fontcolorblue">Diseñadora de</span>
+    <span class="typewrite" data-period="2000" data-type='[  "productos digitales", "tiendas en línea", "marketing digital" ]'>
+      <span class="wrap"></span>
+    </span>
+
+     
         <div class="hero__description"> Te ayudo a construir e impulsar tu negocio digital</div>
         <div class="hero__buttons">
-        <button class="button__default"><a href="">Enviar mensaje</a> </button>
+        <button class="button__primary"><a href="">Enviar mensaje</a> </button>
         <button class="button__secondary"><a href="">Descargar CV</a></button> </div>
         </div>
-        <div id="hero__image"><img src="./img/hero.png" alt="productos digitales"> </div>   
+        <div data-aos="zoom-in-left" id="hero__image"><img class="slide-left" src="./img/hero.png" alt="productos digitales"> </div>   
     </div>
 </main>
  <!--Body-->
@@ -45,8 +55,8 @@
 
 <div id="experiencia">
     <div id="experiencia__title">
-    <h3 class="h3">EXPERIENCIA</h3>
-    <button class="button__terciary"><a href="./vistas/experiencia.html">Ver más</a></button> </div>
+    <h3 class="h3"">EXPERIENCIA</h3>
+    <button class="button__secondary"><a href="./vistas/experiencia.html">Ver más</a></button> </div>
     <div id="experiencia__card"> 
         <div class="experiencia__icons">
         <div class="experiencia__producto"> <img class="header__top--align" src="./img/experiencia1.svg" alt="" width="200px"> 
@@ -63,34 +73,36 @@
     <h5 class="h5">Portafolio de</h5>
     <h2 class="h2">DISEÑO DE PRODUCTO</h2>
     <div class="producto__button">
-    <button class="button__default"><a href="./vistas/experiencia.html">Ver más</a></button>
+    <button class="button__terciary"><a href="./vistas/experiencia.html">Ver más</a></button>
     </div></div>
-    <div id="producto__card"> <img src="./img/portafolio1.jpg" alt="productos digitales"> </div>
+    <div data-aos="fade-left" id="producto__card"> <img src="./img/portafolio1.jpg" alt="productos digitales"> </div>
     </div>
 </div>
 </div>
 <div id="grafico">
-    <div id="grafico__card"> <img src="./img/portafolio2.jpg" alt="Imagen placeholder"> </div>
+    <div data-aos="fade-right" id="grafico__card"> <img src="./img/portafolio2.jpg" alt="Imagen placeholder"> </div>
     <div id="grafico__title">
     <h5 class="h5">Portafolio de</h5>
     <h2 class="h2">DISEÑO GRÁFICO</h2>
     <div class="grafico__button">
-    <button class="button__default"><a href="./vistas/experiencia.html">Ver más</a></button>
+    <button class="button__terciary"><a href="./vistas/experiencia.html">Ver más</a></button>
     </div>
     </div>
 </div>
 </div>
 
 <div id="ecommerce">
-    <iframe class="ecommerce__video" src="https://www.youtube.com/embed/k3UevKvP9RU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe data-aos="zoom-in" class="ecommerce__video" src="https://www.youtube.com/embed/k3UevKvP9RU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div id="ecommerce__title">
     <h3 class="h3">ECOMMERCE</h3> </div>
     <div id="ecommerce__card"> 
     <div class="ecommerce__button">
-    <button class="button__terciary"><a href="./vistas/experiencia.html">Ver más</a></button></div>
+    <button class="button__secondary"><a href="./vistas/experiencia.html">Ver más</a></button></div>
     
 </div>
-
+<script>
+    AOS.init();
+  </script>
 </body>
     <!--Footer-->
 <footer id="footer">
@@ -148,6 +160,4 @@
         </div>
         </div>
 </footer>
-
-
 </html>

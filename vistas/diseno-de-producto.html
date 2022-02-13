@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../css/estilos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +32,7 @@
 <!-- BODY -->
 <body>
 <div class="producto__page">
-    <div class="producto__page-t"> <h3 class="title">DISEÑO DE PRODUCTOS DIGITALES</h3> </div>
+    <div class="producto__page-t""> <h3 class="title">DISEÑO DE PRODUCTOS DIGITALES</h3> </div>
 </div>
 <div id="producto__page-proyect1">
     <div id="producto__page-title">
@@ -37,24 +40,27 @@
     <h5 class="h5">COMPAÑIA</h5>
     <P class="producto__page-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue efficitur magna, quis tempus turpis tincidunt nec. Maecenas quis nisi magna. Aliquam vel elementum nunc. Proin eget turpis nunc.</P>
     <div class="producto__page-button">
-    <button class="button__default"><a href="./vistas/experiencia.html">Ver más</a></button>
+    <button class="button__terciary"><a href="./vistas/experiencia.html">Ver más</a></button>
     </div></div>
-    <div id="producto__page-card"> <img src="../img/portafolio1.jpg" alt="productos digitales"> </div>
+    <div data-aos="fade-left" id="producto__page-card"> <img src="../img/portafolio1.jpg" alt="productos digitales"> </div>
     </div>
 
 <div id="producto__page-proyect1">
-    <div id="producto__page-card"> <img src="../img/portafolio1.jpg" alt="productos digitales"> </div>
+    <div data-aos="fade-right" id="producto__page-card"> <img src="../img/portafolio1.jpg" alt="productos digitales"> </div>
     
     <div id="producto__page-title">
     <h3 class="h3">PROYECTO 2</h3>
     <h5 class="h5">COMPAÑIA</h5>
     <P class="producto__page-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue efficitur magna, quis tempus turpis tincidunt nec. Maecenas quis nisi magna. Aliquam vel elementum nunc. Proin eget turpis nunc.</P>
     <div class="producto__page-button">
-    <button class="button__default"><a href="./vistas/experiencia.html">Ver más</a></button>
+    <button class="button__terciary"><a href="./vistas/experiencia.html">Ver más</a></button>
     </div></div>
 </div>
 </div>
 </div>
+<script>
+    AOS.init();
+  </script>
 </body>
 <!-- FOOTER -->
 <footer id="footer">
@@ -107,6 +113,4 @@
     </div>
     </div>
 </footer>
-
-
 </html>  

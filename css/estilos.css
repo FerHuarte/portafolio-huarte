@@ -4,14 +4,16 @@
     box-sizing: border-box; 
     font-family:'Poppins', sans-serif;
   }
-  
+  .body{
+      overflow-x: hidden;
+  }
 /* Headertop */
 
 .grilla__header{  
     display: grid;
     position:fixed;
     background-color:#222627;
-    width:100%;
+   width:100% ;
     grid-template-rows: 30px 80px;
     grid-column: 100%;
     grid-template-areas: "header__top"
@@ -31,8 +33,8 @@ div#header__top {
     align-items: center;
     padding:1% ;
     padding-right: 2%;
-    background-color:#8188e9;
-    width: 100%;
+    background-color:#19191a;
+   
     color:white;
     font-size: 14px;
     font-weight: 400;
@@ -115,20 +117,21 @@ div#hero__image{
     flex-direction: column;
     color:#fff;
     font-weight: 500;
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 60px;
+    line-height: 90px;
     flex-wrap: wrap;
-    padding-top:28%;
+    justify-content: center;
     padding-left:12%;
+    margin-top:40px;
 }
 #fontcolorblue{
-    color:#8188e9 ;
+    color:#ffffff ;
 }
 .hero__description{
     display: flex;
     color:#fff;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 36px;
     padding-top:5%;
     padding-bottom:5%;  
@@ -142,98 +145,119 @@ div#hero__image{
     flex-direction:column;
     padding-top:22%;
     width: 90%;
-    height:90%;
-     
+    height:90%;     
 }
 #hero__image div img {
     object-fit: contain; 
 }
 /* Buttons */
+.button__primary {
+    background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
+    background-size: 800% 400%;
+    width: 240px;
+    height: 60px;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+    transition: all .5s ease-in-out;
+    animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+    margin-bottom: 20px;
+   }
+   .button__primary>a{
+    text-decoration: none;
+   }
+   
+   .button__primary:hover {
+    animation: gradient 3s infinite;
+    transform: scale(1.05);
+   }
+   
+   .button__primary:active {
+    animation: gradient 3s infinite;
+    transform: scale(0.8);
+   }
+   
+   @keyframes gradient {
+    0% {
+     background-position: 0% 50%;
+    }
+   
+    50% {
+     background-position: 100% 50%;
+    }
+   
+    100% {
+     background-position: 0% 50%;
+    }
+   }
+   
 
-.button__default{
-    display: inline-flex;
-    background-color: #fff;
-    color: #222627;
+.button__secondary {
+    background: #222627;
+    background-size: 800% 400%;
     width: 240px;
     height: 60px;
+    display: inline-block;
     border-radius: 10px;
-    border-color: #fff;
+    border-width: 2px;
     border-style: solid;
-    border-width: 0.5px;
-    margin: 5px;
-}
-.button__default a{
-    position: relative;
-    width: 240px;
-    height: 60px;
-    color: #222627;
-    font-size:20px;
-    font-weight:450;
+    border-color: -internal-light-dark(rgb(255, 255, 255), rgb(255, 255, 255));
+    border-image:;
+    font-size: 16.5px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    transition: all .5s ease-in-out;
+    animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+   }
+   .button__secondary>a{
     text-decoration: none;
-    top: 14px;
-}
-.button__default:hover{
-    background-color:#8188e9 ;
-    border-color: #8188e9;
-}
-.button__default a:hover{
-    color: #fff;
-}
+   }
+   
+   .button__secondary:hover {
+    transform: scale(1.05);
+   }
+   
+   .button__secondary:active {
+    transform: scale(0.8);
+   }
+   .button__secondary:visited {
+     color: white;
+   }
+   
 
-.button__secondary{
-    display: inline-flex;
-    background-color: #222627;
+.button__terciary {
+    background: #fff;
+    background-size: 800% 400%;
     width: 240px;
     height: 60px;
+    display: inline-block;
     border-radius: 10px;
-    border-color: #fff;
     border-style: solid;
-    border-width: 0.5px;
-    margin: 5px;
-}
-.button__secondary a{
-    position: relative;
-    color: #fff;
-    font-size:20px;
-    font-weight: 450;
+    border-color: -internal-light-dark(rgb(255, 255, 255), rgb(255, 255, 255));
+    border-image:;
+    font-size: 16.5px;
+    font-weight: 500;
+    color:#222627;
+    transition: all .5s ease-in-out;
+    animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+   }
+   .button__terciary>a{
     text-decoration: none;
-    top: 14px;
-    left: 46px;
-}
-.button__secondary:hover{
-    background-color:#8188e9 ;
-    border-color: #8188e9;
-}
-.button__secondary a:hover{
-    color: #fff;
-}
-.button__terciary{
-    display: inline-flex;
-    background-color: #222627;
-    width: 240px;
-    height: 60px;
-    border-radius: 10px;
-    border-color: #222627;
-    border-style: solid;
-    border-width: 0.5px;
-    margin: 5px;
-}
-.button__terciary a{
-    position: relative;
-    color: #fff;
-    font-size:20px;
-    font-weight: 450;
-    text-decoration: none;
-    top: 14px;
-    left: 76px;
-}
-.button__terciary:hover{
-    background-color:#8188e9 ;
-    border-color: #8188e9;
-}
-.button__terciary a:hover{
-    color: #fff;
-}
+    color:#222627;
+   }
+   
+   .button__terciary:hover {
+    transform: scale(1.05);
+   }
+   
+   .button__terciary:active {
+    transform: scale(0.8);
+   }
+   
+
 
 /* Experiencia index*/
 #experiencia{
@@ -251,6 +275,7 @@ div#experiencia__title{
 }
 div#experiencia__card{
     grid-area:"experiencia__card";
+    width: 90%;
 }
 #experiencia__title{
     display: flex;
@@ -267,10 +292,10 @@ div#experiencia__card{
 .experiencia__icons{
     display:flex;
     flex-direction: row;
-    background-color:#8188e9;
+    background: linear-gradient(312deg, rgba(129,136,233,1) 36%, rgba(131,115,252,1) 100%);
     padding: 4% 8% 4% 6% ;
     border-radius: 8px;
-    width: 80%;
+    width: 90%;
     align-items: center;
 }
 
@@ -351,6 +376,7 @@ div#grafico__card{
     font-size: 28px;
     line-height: 60px;
     left: 20%;
+    width: 80%;
    
 }
 .grafico__button{
@@ -367,7 +393,7 @@ div#grafico__card{
 /* Ecommerce index */
 #ecommerce{
     position:relative;
-    background-color:#ebebeb;
+    background: linear-gradient(184deg, rgba(255,255,255,1) 9%, rgba(234,231,255,1) 100%);
     display:grid;
     grid-template-rows:50% 50%;
     grid-template-columns:100%;
@@ -394,7 +420,7 @@ div#ecommerce__card{
 }
 #ecommerce__card{
     position: relative;
-    background-color:#19191a;
+    background-color:#222627;
     padding-top:18%;
 }
 .ecommerce__video{
@@ -525,12 +551,12 @@ div#footer__column3 {
     display: grid;
     position: relative;
     overflow-x:scroll;
-    background-color: #19191a;
+    background:#1f2023;
     width: 100%;
     height:750px;
     border-radius: 8px;
     border-bottom:60px;
-    border-color:#787878;
+    border-color:#1e1e1e;
     padding: 8%;
     padding-top: 12%;
     color: #fff;
@@ -582,20 +608,21 @@ div#experiencia__button{
 #experiencia__bloque2{
     position: relative;
     font-size: 18px;
-    padding-top: 12%;
+    padding-top: 13%;
+
 }
 
 #experiencia__bloque3{
    
     position: relative;
     font-size: 18px;
-    padding-top: 12%;
+    padding-top: 13%;
 }
 
 #experiencia__bloque4{
     position: relative;
     font-size: 18px;
-    padding-top: 12%;
+    padding-top: 13%;
     
 }
     
@@ -606,7 +633,7 @@ div#experiencia__button{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #19191a;
+    background-color: #1f2023;
     height:250px;
     width: 100%;
 }
@@ -620,6 +647,9 @@ div#experiencia__button{
     position:relative;
     display:grid;
     background:#1f2023;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #222627;
     grid-template-rows:100%;
     grid-template-columns:50% 50%;
     grid-template-areas: "producto__page-title producto__page-card";
@@ -627,7 +657,7 @@ div#experiencia__button{
     height: 700px;
 }
 div#producto__page-title{
-    
+
     grid-area:"producto__page-title ";
 }
 div#producto__page-card{
@@ -658,7 +688,7 @@ div#producto__page-card{
 #producto__page-card{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; 
     background-color:#222627;
     padding-top: 10px;
 }
@@ -673,7 +703,7 @@ div#producto__page-card{
 #grilla__design{
     display: grid;
     position:relative;
-    background: #19191a;
+    background: #1f2023;
     grid-template-rows:400px,100%, 100%, 100%;
     grid-template-columns:repeat(4, 1fr); 
     grid-template-areas: "header header header header"
@@ -768,36 +798,48 @@ div#header__design {
     grid-template-columns: 100%;
     grid-template-areas: "hero__title" "hero__image";
     width: 100%;
-    height:1100px;
+    height: 1200px;
+   
+   
 }
 #hero__title{
     display: inline-flex;
+    justify-content: flex-start;
     align-items: center;
-    padding-top:5%;
+    padding-top:0%;
     padding-left:0%;
+    padding-bottom: 0px;
     font-size: 40px;
     line-height:56px;
     height: 100%;
+ 
+
+  
 }
 #hero__image{
+    position:absolute;
     display: flex;
-    padding-top:0%;
+    justify-content: flex-start;
+    padding-top: 40%;
     width: 100%;
     height:100%;
+
+   
 }
 }
-@media screen and (min-device-width:769px) and (max-device-width: 1024px) {
+@media screen and (min-device-width:768px) and (max-device-width: 1023px) {
     #hero{
   
-    height:1300px;
+    height: 950px;
 } 
 #hero__image{
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left:0%;
     padding-bottom: 10%;
-    
+    padding-top:85%;
     width: 100%;
     height:100%;
 }
@@ -829,7 +871,7 @@ div#header__design {
 }
 
 #hero__image{
-    padding-top:0%;
+    padding-top:100%;
     
     width: 100%;
     height:100%;
@@ -873,18 +915,19 @@ div#header__design {
         padding-top:8%;   
 }
     #experiencia__card{
-        display: flex; 
-        justify-content:center;
         padding-top: 0%;
         padding-bottom: 10%;
+        padding-left: 70px;
+      
 }
     .experiencia__icons{
         display:flex;
         flex-direction:row;
+        justify-content: center;
         background-color:#8188e9;
-            padding: 4% 12% 4% 5% ;
+        padding: 4% 12% 4% 12% ;
         border-radius: 8px;
-        width: 90%;
+        width:100%;
 
 }
 }
@@ -898,20 +941,25 @@ div#header__design {
 
     padding-top: 10%;
     padding-bottom: 15%;
+    padding-left:100px;
 }
 .experiencia__icons{
     display:flex;
     flex-direction:column;
     background-color:#8188e9;
-    padding: 4% 8% 4% 6% ;
+    padding: 4% 36% 4% 36% ;
     border-radius: 8px;
     width: 80%;
     align-items: center;
+  
 }
 }
 
 /* MQ Producto index */
 @media screen and (min-device-width:769px) and (max-device-width: 1024px) {
+    #producto{
+        height: 520px;
+    }
     #producto__title{
         width: 80%;
         line-height: 60px;
@@ -948,6 +996,9 @@ div#header__design {
 
 /* MQ Gráfico index */
 @media screen and (min-device-width:769px) and (max-device-width: 1024px) {
+    #grafico{
+        height: 520px;
+    }
     #grafico__title{
         width: 80%;
         line-height: 60px;
