@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../css/estilos.css">
@@ -12,105 +13,131 @@
 </head>
 
 <!-- HEADER -->
-    <header> 
-        <div class="grilla__header">
-         <div id="header__top">
-        <p>Te ayudo a construir e impulsar tu negocio</p> <img src="../img/Whatsapp.svg" alt="Escribir en whatsapp" width="20px">
+<header> 
+    <section class="container-fluid header__port">
+    <div class="row">
+    <div class="col header__top">
+    <div>Te ayudo a construir e impulsar tu negocio</div> <img src="../img/Whatsapp.svg" alt="Escribir en whatsapp" width="20px">
         </div>
-        <div id="header__nav">
-        <img src="../img/logo.svg">
-       
-        <ul>
-            <li><a href="../index.html">INICIO</a></li>
-            <li><a href="./experiencia.html">EXPERIENCIA</a> </li>
-            <li><a href="./diseno-de-producto.html">DISEÑO DE PRODUCTO</a> </li>
-            <li><a href="./diseno-grafico.html">DISEÑO Y MKT</a></li>
-            <li><a href="./ecommerce.html">ECOMMERCE</a></li>
-        </ul>
         </div>
-    </header>
+    <div class="row">    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">  <img src="../img/logo.svg"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav header__nav">
+              <li class="nav-item"><a class="nav-link"  href="../index.html">INICIO</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="./experiencia.html">EXPERIENCIA</a> 
+              </li>
+              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./diseno-de-producto.html">DISEÑO DE PRODUCTO</a> 
+            </li>
+                <li><a class="nav-item"> <a class="nav-link" href="./diseno-grafico.html">DISEÑO Y MKT</a>
+                </li>
+              <li class="nav-item"> <a class="nav-link" href="./ecommerce.html">ECOMMERCE</a></li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+</header>
 <!-- BODY -->
 <body>
-<div class="producto__page">
-    <div class="producto__page-t""> <h3 class="title">DISEÑO DE PRODUCTOS DIGITALES</h3> </div>
-</div>
-<div id="producto__page-proyect1">
-    <div id="producto__page-title">
-    <h3 class="h3">PROYECTO 1</h3>
-    <h5 class="h5">COMPAÑIA</h5>
-    <P class="producto__page-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue efficitur magna, quis tempus turpis tincidunt nec. Maecenas quis nisi magna. Aliquam vel elementum nunc. Proin eget turpis nunc.</P>
-    <div class="producto__page-button">
-    <button class="button__terciary"><a href="./vistas/experiencia.html">Ver más</a></button>
-    </div></div>
-    <div data-aos="fade-left" id="producto__page-card"> <img src="../img/portafolio1.jpg" alt="productos digitales"> </div>
+<section class="container-fluid">
+    <div class="row producto__page">
+        <div class="col""> <h3 class="title">DISEÑO DE PRODUCTOS DIGITALES</h3> </div>
     </div>
-
-<div id="producto__page-proyect1">
-    <div data-aos="fade-right" id="producto__page-card"> <img src="../img/portafolio1.jpg" alt="productos digitales"> </div>
-    
-    <div id="producto__page-title">
-    <h3 class="h3">PROYECTO 2</h3>
-    <h5 class="h5">COMPAÑIA</h5>
-    <P class="producto__page-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue efficitur magna, quis tempus turpis tincidunt nec. Maecenas quis nisi magna. Aliquam vel elementum nunc. Proin eget turpis nunc.</P>
-    <div class="producto__page-button">
-    <button class="button__terciary"><a href="./vistas/experiencia.html">Ver más</a></button>
-    </div></div>
-</div>
-</div>
-</div>
-<script>
-    AOS.init();
-  </script>
+</section>
+    <section class="container-fluid">
+  <div class="row producto">
+      <div class="col-md-6 producto__page-title">
+      <h2 class="h3">PROYECTO 1</h2>
+      <h5 class="h5">COMPAÑIA</h5>
+      <p class="producto__page-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue efficitur magna, quis tempus turpis tincidunt nec. Maecenas quis nisi magna. Aliquam vel elementum nunc. Proin eget turpis nunc.</p>
+      <div class="producto__button">
+      <button class="button__terciary"><a href="./vistas/experiencia.html">Ver más</a></button>
+      </div></div>
+      <div data-aos="fade-left" class="col-md-6 producto__card"> <img src="../img/portafolio1.jpg" alt="productos digitales"> </div>
+      </div>
+  </div>
+  </div>
+  </section>
+  <section class="container-fluid">
+  <div class="row producto">
+      <div data-aos="fade-right" class="col-md-6 order-md-1 col-12 order-2 grafico__card"> <img src="../img/portafolio2.jpg" alt="Imagen placeholder"> </div>
+      <div class="col-md-6 order-md-2 col-12 order-1 producto__page-title">
+      <h2 class="h3">PROYECTO 2</h2>
+      <h5 class="h5">COMPAÑIA</h5>
+      <p class="producto__page-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue efficitur magna, quis tempus turpis tincidunt nec. Maecenas quis nisi magna. Aliquam vel elementum nunc. Proin eget turpis nunc.</p>
+      <div class="grafico__button">
+      <button class="button__terciary"><a href="./vistas/experiencia.html">Ver más</a></button>
+      </div>
+      </div>
+  </div>
+  </section>
+<script>AOS.init();</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 <!-- FOOTER -->
-<footer id="footer">
-    <div id="footer__column1">   
-    <h3 class="h3">CONTACTO</h3>
-    <p>Cuéntame sobre tu proyecto:</p>
-    </div>
-    <div id="footer__column2"> 
-    <form class="form"action="" method="" enctype="">
-        <div class="formtext">
-        <label id="usersex">Selecciona tu perfil</label> 
-        <div class="elige">
-        <input type="radio" name="campoUserPerfil" id="empresario"required> Tengo una Pyme 
-        </div>
-        <div class="elige">
-        <input type="radio" name="campoUserPerfil" id="reclutador"required> Soy Reclutador
-        </div>
-        <div>
-          <label for="Nombre">Nombre:</label>  
-            <input class="input" type="text" name="" id="" placeholder="Nombre"> 
-        </div>
-        <div>
-            <label for="Email">Email:</label>  
-            <input class="input" type="email" name="" id=""placeholder="Email">
-        </div>
-        <div>
-            <label for="Telefono">Telefono:</label>  
-            <input class="input" type="number" name="" id="" placeholder="Telefono">
-        </div>  
-        <div>
-            <label for="servicio">Elige el servicio de tu interés:</label>
-            <select name="campoUserService" id="servicio">
-                <option value="" disable selected>Selecciona una opción</option>
-                <option value="diseno-de-producto">Diseño de producto</option>
-                <option value="diseno-grafico">Diseño gráfico</option>
-                <option value="ecommerce">Ecommerce</option>
-            </select>
-        </div>
-        </div>
-        <input class="button__form" type="submit" value="ENVIAR">
-    </form>
-    </div>
-    <div id="footer__column3">
-            <li><a href="../index.html">INICIO</a></li>
-            <li><a href="./experiencia.html">EXPERIENCIA</a> </li>
-            <li><a href="./diseno-de-producto.html">DISEÑO DE PRODUCTO</a> </li>
-            <li><a href="./diseno-grafico.html">DISEÑO Y MKT</a></li>
-            <li><a href="./ecommerce.html">ECOMMERCE</a></li>
-        </ul>
-    </div>
-    </div>
-</footer>
+<footer class="footer">
+    <section class="container-fluid"></section>
+    <div class="row">  
+        <div class="col-lg-3 footer__column1">  
+             
+            <h3 class="h3">CONTACTO</h3>
+            <p>Cuéntame sobre tu proyecto:</p>
+            </div>
+        
+            <div class="col-lg-6 footer__column2">  
+            
+            <form class="form"action="" method="" enctype="">
+                <div class="formtext">
+                <label id="usersex">Selecciona tu perfil</label> 
+                <div class="elige">
+                <input type="radio" name="campoUserPerfil" id="empresario"required> Tengo una Pyme 
+                </div>
+                <div class="elige">
+                <input type="radio" name="campoUserPerfil" id="reclutador"required> Soy Reclutador
+                </div>
+                <div>
+                  <label for="Nombre">Nombre:</label>  
+                    <input class="input" type="text" name="" id="" placeholder="Nombre"> 
+                </div>
+                <div>
+                    <label for="Email">Email:</label>  
+                    <input class="input" type="email" name="" id=""placeholder="Email">
+                </div>
+                <div>
+                    <label for="Telefono">Telefono:</label>  
+                    <input class="input" type="number" name="" id="" placeholder="Telefono">
+                </div>  
+                <div>
+                    <label for="servicio">Elige el servicio de tu interés:</label>
+                    <select name="campoUserService" id="servicio">
+                        <option value="" disable selected>Selecciona una opción</option>
+                        <option value="diseno-de-producto">Diseño de producto</option>
+                        <option value="diseno-grafico">Diseño gráfico</option>
+                        <option value="ecommerce">Ecommerce</option>
+                    </select>
+                </div>
+                </div>
+                <input class="button__form" type="submit" value="ENVIAR">
+            </form>
+            </div>
+        
+            <div class="col-lg-3 footer__column3">  
+               
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="./experiencia.html">EXPERIENCIA</a> </li>
+                    <li><a href="./diseno-de-producto.html">DISEÑO DE PRODUCTO</a> </li>
+                    <li><a href="./diseno-grafico.html">DISEÑO Y MKT</a></li>
+                    <li><a href="./ecommerce.html">ECOMMERCE</a></li>
+                </ul>
+            </div>
+            </div>
+    </footer>
 </html>  

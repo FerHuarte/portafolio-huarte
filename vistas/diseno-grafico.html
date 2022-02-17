@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../css/estilos.css">
@@ -11,52 +12,76 @@
     <title>DISEÑO GRÁFICO</title>
 </head>
 <!-- HEADER -->
-    <header> 
-            <div class="grilla__header">
-             <div id="header__top">
-            <p>Te ayudo a construir e impulsar tu negocio</p> <img src="../img/Whatsapp.svg" alt="Escribir en whatsapp" width="20px">
-            </div>
-            <div id="header__nav">
-            <img src="../img/logo.svg">
-           
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="./experiencia.html">EXPERIENCIA</a> </li>
-                <li><a href="./diseno-de-producto.html">DISEÑO DE PRODUCTO</a> </li>
-                <li><a href="./diseno-grafico.html">DISEÑO Y MKT</a></li>
-                <li><a href="./ecommerce.html">ECOMMERCE</a></li>
-            </ul>
-            </div>
-        </header>
+<header> 
+    <section class="container-fluid header__port">
+    <div class="row">
+    <div class="col header__top">
+    <div>Te ayudo a construir e impulsar tu negocio</div> <img src="../img/Whatsapp.svg" alt="Escribir en whatsapp" width="20px">
         </div>
+        </div>
+    <div class="row">    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">  <img src="../img/logo.svg"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav header__nav">
+              <li class="nav-item"><a class="nav-link" href="../index.html">INICIO</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="./experiencia.html">EXPERIENCIA</a> 
+              </li>
+              <li class="nav-item"> <a class="nav-link" href="./diseno-de-producto.html">DISEÑO DE PRODUCTO</a> 
+            </li>
+                <li><a class="nav-item"> <a class="nav-link active" aria-current="page"  href="./diseno-grafico.html">DISEÑO Y MKT</a>
+                </li>
+              <li class="nav-item"> <a class="nav-link" href="./ecommerce.html">ECOMMERCE</a></li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+</header>
 <!-- BODY -->
     <body>
+        <section class="container-fluid">
+            <div class="row producto__page">
+                <div class="col""> <h3 class="title">DISEÑO Y MKT DIGITAL</h3> </div>
+            </div>
+        </section>
+
         <div id="grilla__design">
-            <div id="header__design"> <h3 class="title"> DISEÑO Y MKT DIGITAL</h3> </div>
+            
             <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" id="proyecto1"><img src="../img/mkt1.jpg" alt=""></div>
             <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" id="proyecto2"><img src="../img/mkt2.jpg" alt=""></div>
             <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" id="proyecto3"><img src="../img/mkt3.jpg" alt=""></div>
             <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" id="proyecto4"><img src="../img/mkt4.jpg" alt=""></div>
-            <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" id="proyecto5"><img src="../img/mkt5.jpg" alt=""></div>
-            <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" id="proyecto6"><img src="../img/mkt6.jpg" alt=""></div>
-            <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" id="proyecto7"><img src="../img/mkt7.jpg" alt=""></div>
-            <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" id="proyecto8"><img src="../img/mkt8.jpg" alt=""></div>
-            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" id="proyecto9"><img src="../img/mkt9.jpg" alt=""></div>
-            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" id="proyecto10"><img src="../img/mkt10.jpg" alt=""></div>
-            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" id="proyecto11"><img src="../img/mkt11.jpg" alt=""></div>
-            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"id="proyecto12"><img src="../img/mkt12.jpg" alt=""></div>
+            <div data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine" id="proyecto5"><img src="../img/mkt5.jpg" alt=""></div>
+            <div data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine" id="proyecto6"><img src="../img/mkt6.jpg" alt=""></div>
+            <div data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine" id="proyecto7"><img src="../img/mkt7.jpg" alt=""></div>
+            <div data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine" id="proyecto8"><img src="../img/mkt8.jpg" alt=""></div>
+            <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" id="proyecto9"><img src="../img/mkt9.jpg" alt=""></div>
+            <div data-aos="fade-right" data-aos-offset=100" data-aos-easing="ease-in-sine" id="proyecto10"><img src="../img/mkt10.jpg" alt=""></div>
+            <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" id="proyecto11"><img src="../img/mkt11.jpg" alt=""></div>
+            <div data-aos="fade-right" data-aos-offset=100" data-aos-easing="ease-in-sine"id="proyecto12"><img src="../img/mkt12.jpg" alt=""></div>
         </div>
-        <script>
-            AOS.init();
-          </script>
+        <script> AOS.init(); </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         </body>
 <!-- FOOTER -->
-<footer id="footer">
-            <div id="footer__column1">   
+<footer class="footer">
+    <section class="container-fluid"></section>
+    <div class="row">  
+        <div class="col-lg-3 footer__column1">  
+             
             <h3 class="h3">CONTACTO</h3>
             <p>Cuéntame sobre tu proyecto:</p>
             </div>
-            <div id="footer__column2"> 
+        
+            <div class="col-lg-6 footer__column2">  
+            
             <form class="form"action="" method="" enctype="">
                 <div class="formtext">
                 <label id="usersex">Selecciona tu perfil</label> 
@@ -91,16 +116,18 @@
                 <input class="button__form" type="submit" value="ENVIAR">
             </form>
             </div>
-            <div id="footer__column3">
+        
+            <div class="col-lg-3 footer__column3">  
+               
                     <li><a href="../index.html">INICIO</a></li>
-                    <li><a href="./vistas/experiencia.html">EXPERIENCIA</a> </li>
-                    <li><a href="./vistas/diseno-de-producto.html">DISEÑO DE PRODUCTO</a> </li>
-                    <li><a href="./vistas/diseno-grafico.html">DISEÑO Y MKT</a></li>
-                    <li><a href="./vistas/ecommerce.html">ECOMMERCE</a></li>
+                    <li><a href="./experiencia.html">EXPERIENCIA</a> </li>
+                    <li><a href="./diseno-de-producto.html">DISEÑO DE PRODUCTO</a> </li>
+                    <li><a href="./diseno-grafico.html">DISEÑO Y MKT</a></li>
+                    <li><a href="./ecommerce.html">ECOMMERCE</a></li>
                 </ul>
             </div>
             </div>
-</footer>
+    </footer>
 
 </html>   
 
