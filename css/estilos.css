@@ -6,7 +6,7 @@
   }
   
   .body{
-      overflow-x: hidden;
+      overflow-x: hiddengit;
   }
 /* Headertop */
 
@@ -639,7 +639,8 @@ div#header__design {
    
 @media screen and (max-width: 768px){
 .experiencia__card{
-        padding-bottom: 10%;  
+        padding-bottom: 22%;   
+        
 } 
 .experiencia__title{
         padding-top:8%;   
@@ -650,17 +651,23 @@ div#header__design {
         flex-direction:row;
         justify-content: center;
         background-color:#8188e9;
-        padding: 4% 12% 4% 12% ;
+        padding:4% 12% 4% 12% ;
         border-radius: 8px;
         width:100%;
+    
 }
+.experiencia__page-button{
+    position: absolute;
+   margin-top:90%;
+}
+
 }
 @media screen and (max-width: 425px) {
 .experiencia__card{
 
     padding-top: 10%;
-    padding-bottom: 15%;
-    padding-left:100px;
+    padding-bottom: 35%;
+align-items: center;
 }
 .experiencia__icons{
     display:flex;
@@ -668,9 +675,14 @@ div#header__design {
     background-color:#8188e9;
     padding: 4% 36% 4% 36% ;
     border-radius: 8px;
-    width: 80%;
+    width: 100%;
     align-items: center;
 }
+.experiencia__page-button{
+    position: absolute;
+   margin-top:280%;
+}
+
 }
 
 /* MQ Producto index */
@@ -809,9 +821,12 @@ div#header__design {
     .producto__page-title{
         padding-top: 1%;
         padding-bottom:18% ;
-        padding-left: 5%;
-
+       justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 0%;
 }
+
 }
 /* MQ Design Page */
 
