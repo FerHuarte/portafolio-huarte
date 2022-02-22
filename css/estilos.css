@@ -8,6 +8,7 @@
   .body{
       overflow-x: hiddengit;
   }
+  
 /* Headertop */
 
 .header__port{
@@ -79,11 +80,29 @@ header ul li a:hover, a:focus{
     font-size: 32px ;
     font-weight: 500;
 }
+.title2{
+    color: #888A97;
+    font-size: 48px ;
+    font-weight: 500;
+}
 
+.plight{
+    color: white;
+}
 /* Hero index */
+.head{
+    text-align: center;
+    padding-top:4%;
+    padding-bottom: 5%;
+    padding-right:8%;
+}
+.headimage{
+width:100%;
+padding-left: 5%;
 
+}
 .hero{
-    background-color:#212529; 
+    background-color:#1f2023; 
 } 
 .hero__title{
     display: flex;
@@ -435,7 +454,7 @@ header ul li a:hover, a:focus{
     color: #767a7e;
 }
 .experiencia__title-page{
-    background:#222627;
+    background:#1f2023;
     padding-left: 5%;
     padding-bottom: 3%;
     padding-top: 12%;
@@ -585,6 +604,13 @@ div#header__design {
     justify-content: flex-start;
     padding-top: 5%;
     width: 90%;
+}
+.head{
+    text-align: center;
+    padding-top:3%;
+    padding-bottom: 5%;
+    padding-right: 10%;
+    padding-left:5% ;
 }
 }
 
