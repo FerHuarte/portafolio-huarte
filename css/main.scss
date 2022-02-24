@@ -1,0 +1,13 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing:border-box; 
+    font-family:'Poppins', sans-serif;
+  }
+  @import"./partials/variables";
+  @import "./partials/header";
+  @import "./partials/titles";
+  @import "./partials/components";
+  @import "./partials/footer";
+  @import "./partials/pages";
+  @import "./partials/mediaqueries";

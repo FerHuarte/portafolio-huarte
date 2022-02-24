@@ -1,0 +1,265 @@
+@import"./partials/variables";
+.head{
+    text-align: center;
+    padding-top:4%;
+    padding-bottom: 5%;
+    padding-right:8%;
+    &image{
+        width:100%;
+        padding-left: 5%;
+    }
+}
+/* Hero */
+.hero{
+    background-color:$negro-B; 
+
+    &__title{
+        display: flex;
+        flex-direction: column;
+        color:#fff;
+        font-weight: 500;
+        font-size: 60px;
+        justify-content: center;
+        padding-left:5%;
+    }
+    &__description{
+        display: flex;
+        color:#fff;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 36px;
+        padding-top:5%;
+        padding-bottom:5%;  
+    }
+    &__buttons{
+        display:flexbox;
+        flex-direction: row;
+    }
+    &__image{
+        display: flex;
+        flex-direction: column;
+        padding-top:12%;
+        padding-bottom:10% ;
+        width: 50%;
+        height:50%;     
+    }
+    &__image div img {
+        object-fit: contain; 
+    }
+} 
+/* Buttons */
+.button{
+    &__primary {
+        background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
+        background-size: 800% 400%;
+        width: 240px;
+        height: 60px;
+        display: inline-block;
+        border: none;
+        border-radius: 10px;
+        font-size: 17px;
+        font-weight: 500;
+        color: white;
+        transition: all .5s ease-in-out;
+        animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+        margin-bottom: 20px;
+    }
+    &__primary>a{
+        text-decoration: none;
+    }
+    &__primary:hover {
+        animation: gradient 3s infinite;
+        transform: scale(1.05);
+    }
+    &__primary:active {
+        animation: gradient 3s infinite;
+        transform: scale(0.8);
+    }
+    @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+         background-position: 0% 50%;
+    }
+   }
+    &__secondary {
+        background: $negro-C;
+        background-size: 800% 400%;
+        width: 240px;
+        height: 60px;
+        display: inline-block;
+        border-radius: 10px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: -internal-light-dark(rgb(255, 255, 255), rgb(255, 255, 255));
+        font-size: 16.5px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        transition: all .5s ease-in-out;
+        animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+    }
+    &__secondary>a{
+        text-decoration: none;
+        color:#fff;
+    }
+    &__secondary:hover {
+        transform: scale(1.05);
+    }
+    &__secondary:active {
+        transform: scale(0.8);
+    }
+    &__secondary:visited {
+        color: white;
+    }
+    &__terciary {
+        background: #fff;
+        background-size: 800% 400%;
+        width: 240px;
+        height: 60px;
+        display: inline-block;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: -internal-light-dark(rgb(255, 255, 255), rgb(255, 255, 255));
+        font-size: 16.5px;
+        font-weight: 500;
+        color:$negro-C;
+        transition: all .5s ease-in-out;
+        animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+    }
+    &__terciary>a{
+        text-decoration: none;
+        color:$negro-C;
+    }
+    &__terciary:hover {
+        transform: scale(1.05);
+    }
+    &__terciary:active {
+        transform: scale(0.8);
+    }
+    &__form{
+        background-color:$morado-A;
+        border-color:$morado-A;
+        width:100%;
+        height: 40px;
+        border-radius: 10px;
+        border-style: solid;
+        border-width: 0.5px;
+        margin-top: 20px;
+        color:#fff ;
+        font-size: 14px;
+        font-weight: 300; 
+    }
+}
+/* Experiencia index*/
+.experiencia{
+    position: relative;
+    background:$gris-A;
+    &__title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $negro-C;
+        font-size: 28px;
+        align-items: center;
+    }
+    &__card{
+        padding: 5%;
+    }
+    &__icons{
+        display:flex;
+        flex-direction: row;
+        background: linear-gradient(312deg, rgba(129,136,233,1) 36%, rgba(131,115,252,1) 100%);
+        padding: 4% 8% 4% 6% ;
+        border-radius: 8px;
+        width: 90%;
+        align-items: center;
+    }
+}
+/* Producto index*/
+.producto{
+    background:$negro-B;
+    &__title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #ffffff;
+        font-size: 28px;
+        line-height: 60px;
+        padding-left: 5%;
+    }
+    &__button{
+        position: relative;
+        margin-top: 50px;
+    }
+    &__card{
+        display: flex;
+        padding-top: 10px;
+        flex-direction: column;
+        justify-content: center;
+        background-color:$negro-C;
+    }
+    &__card img{
+        object-fit: cover;
+        width: 100%;
+    }
+}
+/* Grafico index*/
+.grafico{
+    background:$negro-B;
+    &__title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 5%;
+        color: #ffffff;
+        font-size: 28px;
+        line-height: 60px; 
+    }
+    &__button{
+        position: relative;
+        margin-top: 50px;
+    }
+    &__card{
+        background-color:$negro-C;
+    }
+    &__card img{
+        object-fit: cover;
+        width: 100%;
+    }
+}
+/* Ecommerce index */
+.ecommerce{
+    background: linear-gradient(184deg, rgba(255,255,255,1) 9%, rgba(234,231,255,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+&__title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top:5%;
+    padding-bottom: 15%; 
+}
+&__button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 350px;
+}
+&__card{
+    background-color:$negro-C;
+    height:500px;
+}
+&__video{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    z-index:1;
+}
+}
