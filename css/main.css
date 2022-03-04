@@ -41,7 +41,7 @@
   margin-left: 1.5rem;
 }
 
-header ul {
+.header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,13 +58,13 @@ header ul {
   margin: 1%;
 }
 
-header li a:link, a:visited {
+.header li a:link, .header a:visited {
   color: #fff;
   list-style: none;
   text-decoration: none;
 }
 
-header ul li a:hover, a:active {
+.header ul li a:hover, .header a:active {
   color: #8188e9;
   text-decoration: underline;
 }
@@ -608,7 +608,7 @@ header ul li a:hover, a:active {
   color: #767a7e;
 }
 
-.experiencia__title-page {
+.experiencia__page-card__title-page {
   background: #1f2023;
   padding-left: 5%;
   padding-bottom: 3%;
@@ -616,7 +616,7 @@ header ul li a:hover, a:active {
   color: #767a7e;
 }
 
-.experiencia__bloque1 {
+.experiencia__page-card__bloque1 {
   position: relative;
   font-size: 14px;
   margin-bottom: 5%;
@@ -627,7 +627,7 @@ header ul li a:hover, a:active {
   background-color: #e9e9e9;
 }
 
-.experiencia__page-subtitle {
+.experiencia__page-card__page-subtitle {
   color: coral;
   font-size: 24px;
   font-weight: 500;
@@ -763,12 +763,6 @@ div#header__design {
   .h3 {
     font-size: 36px;
     font-weight: 500;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .title2 {
-    font-size: 32px;
   }
 }
 
@@ -1105,7 +1099,7 @@ div#header__design {
   #grilla__design {
     -ms-grid-rows: repeat auto-fill, 1fr;
         grid-template-rows: repeat auto-fill, 1fr;
-    -ms-grid-columns: (1fr)[2];
+    -ms-grid-columns: 100%,100%;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "header header"  "proyecto1 proyecto2" "proyecto3 proyecto4" "proyecto5 proyecto6" "proyecto7 proyecto8" "proyecto9 proyecto10" "proyecto11 proyecto12";
   }
