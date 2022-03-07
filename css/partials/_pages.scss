@@ -1,31 +1,33 @@
 /* Experiencia page */
-@import"./partials/variables";
+@import "./mediaqueries";
+@import "./variables";
+
+@mixin flexcolumn-center{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .experiencia{
     &__page-card{
-    background:$negro-C;
+    background:$negro-B;
     border-bottom-style:solid;
     border-bottom-width:1px;
     border-color:#212529 ;
-    padding-left:5%;
-    padding-right:5%;
-    padding-top: 0%;
-    padding-bottom:5%;
+    padding: 0% 5% 5% 5%;
     color: $gris-D;
     }
     &__title-page{
         background:$negro-B;
-        padding-left: 5%;
-        padding-bottom: 3%;
-        padding-top: 12%;
+        padding: 12% 0% 3% 5%;
         color: $gris-D;
     }
     &__bloque1{
         position: relative;
         font-size: 14px;
         margin-bottom: 5%;
-        padding-left:8%;
-        padding-top:10%;
-        padding-bottom:10%;
+        padding: 10% 0% 10% 8% ;
         border-radius: 8px;
         background-color: $gris-B;
     }
@@ -44,25 +46,46 @@
 #experiencia__button{
     position: relative;  
     padding-top: 3%;
+    @include breakpoint (tablet){
+    padding-top:8%;
+    padding-bottom:7%;
+    }
+    @include breakpoint (movil){
+    padding-top:12%;
+    padding-bottom:12%;
+    }  
 }   
 /* Producto page*/
 .producto{
     &__page{
         display: flex;
         background-color: $negro-B;
-        padding-top: 12%;
-        padding-bottom: 2%;
-        padding-left:5%;
+        padding:12% 0% 3% 5%;
         border-bottom-style: solid;
         border-bottom-width: 1.5px;
+        @include breakpoint (md){
+        padding-top:8%;
+        padding-bottom:6%;
+        }  
     }
     &__page-title{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flexcolumn-center;
         color: #fff; 
-        padding-left: 5%;  
+        padding-left: 5%; 
+        @include breakpoint (tablet){
+        padding-top: 12%;
+        padding-bottom:12% ;
+        padding-left: 5%; 
+        } 
+        @include breakpoint (movil){
+        padding-top: 1%;
+        padding-bottom:18% ;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 80%;  
+         
+        }   
     }
     &__page-description{
         font-size: 14px;
@@ -76,12 +99,10 @@
         margin-top: 50px;
     }
 }
+
 /* Design page */
 .grafico__page-title{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex-column-center;
     color: #fff; 
     padding-left: 5%;
 }
@@ -95,6 +116,24 @@
                          "proyecto1 proyecto2 proyecto3 proyecto4"
                          "proyecto5 proyecto6 proyecto7 proyecto8"
                          "proyecto9 proyecto10 proyecto11 proyecto12";
+                         @include breakpoint (movil){
+                            grid-template-rows: repeat (auto-fill, 1fr);
+                            grid-template-columns:100%; 
+                            grid-template-areas: "header" 
+                            "proyecto1" "proyecto2" "proyecto3" "proyecto4"
+                            "proyecto5" "proyecto6" "proyecto7" "proyecto8"
+                            "proyecto9" "proyecto10" "proyecto11" "proyecto12";       
+                        }   
+   
+                        @media screen and (max-width: 768px) and (min-width: 426px) {
+        grid-template-rows: repeat (auto-fill, 1fr);
+            grid-template-columns:repeat(2, 1fr); 
+            grid-template-areas: "header header" 
+            "proyecto1 proyecto2" "proyecto3 proyecto4"
+            "proyecto5 proyecto6" "proyecto7 proyecto8"
+            "proyecto9 proyecto10" "proyecto11 proyecto12";
+        } 
+        
 }
 #grilla__design > div > img {
         width: 100%;
@@ -125,3 +164,9 @@ div#header__design {
         padding-top: 4%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    #ecommerce{
+        height: 550px;
+    } 
+    }

@@ -1,0 +1,38 @@
+/* Titulos */
+@import "./variables";
+@import "./mediaqueries";
+@mixin titlesize($color,$size,$weight){
+    color:$color;
+    font-size: $size;
+    font-weight:$weight;
+}
+
+.h2{
+    @include titlesize($gris-A,40px,500);
+    @include breakpoint (tablet){ 
+        font-size: 36px;
+    }
+}
+.h3{
+    @include titlesize($gris-C,40px,500);
+    @include breakpoint (tablet){
+        font-size: 36px;
+    }
+}
+.h5{
+    @include titlesize($gris-C,20px,400);
+
+}
+.title{
+    @include titlesize($gris-C,32px,500);
+}
+.title2{
+    @include titlesize($gris-C,48px,500);
+    @include breakpoint (tablet){
+        font-size: 36px;
+    }
+}
+.plight{
+    color: white;
+}
+

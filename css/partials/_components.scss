@@ -1,0 +1,446 @@
+@import "./mediaqueries";
+@import "./variables";
+@mixin size($width,$height){
+    width:$width;
+    height: $height;
+}
+@mixin flex-row-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+@mixin flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.head{
+    text-align: center;
+    padding:4% 8% 5% 0%;
+    &image{
+        width:100%;
+        padding-left:5%;
+    }
+    @include breakpoint (desktop){ 
+    text-align: center;
+    padding-top:3%;
+    padding-bottom: 5%;
+    padding-right: 10%;
+    padding-left:5% ;     
+    } 
+}
+
+/* Hero */
+.hero{
+    background-color:$negro-B; 
+    &__title{
+        @include flex-column-center;
+        color:#fff;
+        font-weight: 500;
+        font-size: 60px;
+        padding-left:5%;
+        @include breakpoint (desktop){ 
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top:10%;
+        padding-left:0%;
+        padding-bottom: 0px;
+        font-size: 40px;
+        line-height:56px; 
+        width: 100%; 
+        }
+        @include breakpoint (movil){  
+        font-size: 32px;
+        line-height: 46px;
+        height: 100%;
+        }
+    }
+    &__description{
+        @include flex-column-center;
+        display: flex;
+        color:#fff;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 36px;
+        padding: 5% 0% 5% 0%;
+        @include breakpoint (movil){ 
+            text-align: center;
+            padding: 16px;
+            font-size: 20px;
+        }
+    }   
+    &__buttons{
+        display:flexbox;
+        flex-direction: row;
+        @include breakpoint (movil){ 
+        display: flex;
+        flex-direction:column;
+        padding: 20px;
+        }
+    }
+    &__image{
+        @include flex-column-center;
+        padding: 12% 0% 10% 0% ;
+        width: 50%;
+        height:50%;
+        @include breakpoint (desktop){ 
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 5%;
+        width: 90%;     
+        }  
+        @include breakpoint (desktop){ 
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 5%;
+        width: 90%; 
+        padding-left: 5%;    
+        }  
+        @include breakpoint (movil){ 
+        width: 100%;
+        height:100%;
+        }   
+    }
+    &__image div img {
+        object-fit: contain; 
+    }
+} 
+/* Buttons */
+.button{
+    @include size(240px,60px);
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all .5s ease-in-out;
+    animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+   
+    &__primary {
+        @extend .button;
+        background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
+        background-size: 800% 400%;
+        color: white;
+        margin-bottom: 20px;
+    }
+    &__primary>a{
+        text-decoration: none;
+    }
+    &__primary:hover {
+        animation: gradient 3s infinite;
+        transform: scale(1.05);
+    }
+    &__primary:active {
+        animation: gradient 3s infinite;
+        transform: scale(0.8);
+    }
+    @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+         background-position: 0% 50%;
+    }
+   }
+    &__secondary {
+        @extend .button;
+        background: $negro-C;
+        background-size: 800% 400%;
+        font-size: 16.5px;
+        border-style: solid;
+        border-color: -internal-light-dark(rgb(255, 255, 255), rgb(255, 255, 255));
+        color: rgb(255, 255, 255);
+        border-width: 2px;
+    }
+    &__secondary>a{
+        text-decoration: none;
+        color:#fff;
+    }
+    &__secondary:hover {
+        transform: scale(1.05);
+    }
+    &__secondary:active {
+        transform: scale(0.8);
+    }
+    &__secondary:visited {
+        color: white;
+    }
+    &__terciary {
+        @extend .button;
+        background: #fff;
+        background-size: 800% 400%;
+        border-style: solid;
+        border-color: -internal-light-dark(rgb(255, 255, 255), rgb(255, 255, 255));
+        color:$negro-C;
+        border-width: 2px;
+    }
+    &__terciary>a{
+        text-decoration: none;
+        color:$negro-C;
+    }
+    &__terciary:hover {
+        transform: scale(1.05);
+    }
+    &__terciary:active {
+        transform: scale(0.8);
+    }
+    &__form{
+        background-color:$morado-A;
+        border-color:$morado-A;
+        @include size(100%,40px);
+        border-radius: 10px;
+        border-style: solid;
+        border-width: 0.5px;
+        margin-top: 20px;
+        color:#fff ;
+        font-size: 14px;
+        font-weight: 300; 
+    }
+}
+/* Experiencia index*/
+.experiencia{
+    position: relative;
+    background:$gris-A;
+    &__title{
+        @include flex-column-center;
+        color: $negro-C;
+        font-size: 28px;
+        align-items: center;
+        @include breakpoint (tablet){  
+            padding-top:8%; ;
+        }    
+    }
+    &__card{
+        padding: 5%;
+        @include breakpoint (md){ 
+        padding-top: 10%;
+        padding-bottom: 10%; 
+        } 
+        @include breakpoint (tablet){ 
+            padding-top:6%;
+        padding-bottom: 20%;
+        }  
+        @include breakpoint (movil){ 
+        padding-top: 10%;
+        padding-bottom: 35%;
+        }     
+    }
+    &__icons{
+        @include flex-row-center;
+        background: linear-gradient(312deg, rgba(129,136,233,1) 36%, rgba(131,115,252,1) 100%);
+        padding: 4% 8% 4% 6% ;
+        border-radius: 8px;
+        width: 90%;
+        align-items: center;
+        @include breakpoint (md){ 
+        display:flex;
+        flex-direction: row;
+        background-color:$morado-A;
+        padding: 4% 8% 4% 6% ;
+        border-radius: 8px;
+        align-items: center; 
+        }
+        @include breakpoint (tablet){ 
+        @include flex-row-center;
+        background-color:$morado-A;
+        padding:4% 12% 4% 12% ;
+        border-radius: 8px;
+        width:100%;
+        } 
+        @include breakpoint (movil){
+        display:flex;
+        flex-direction:column;
+        background-color:$morado-A;
+        padding: 8% 26% 8% 26% ;
+        border-radius: 8px;
+        width: 100%;
+        align-items: center;
+        }          
+    }  
+    &__icons img{
+        @include breakpoint (md){
+        width: 100%;
+        }      
+        }  
+    &__page-button{
+        @include breakpoint (tablet){
+        position: absolute;
+        margin-top:36%;
+        justify-content: center;
+        margin-left: -16%;
+       }
+       @include breakpoint (movil){
+        position: absolute;
+        margin-top:128%;
+        margin-left: -28%;
+        }       
+        }
+}
+/* Producto index*/
+.producto{
+    background:$negro-B;
+    @include breakpoint (movil){
+        padding-top: 20%;
+        justify-content: center; 
+        }       
+    &__title{
+        @include flex-column-center;
+        color: #ffffff;
+        font-size: 28px;
+        line-height: 60px;
+        padding-left: 5%;
+        @include breakpoint (movil){
+        padding-bottom: 20%; 
+        align-items: center;
+        text-align: center;  
+        padding-left: 1%;
+        width: 80%;
+        }       
+    }
+    &__button{
+        position: relative;
+        margin-top: 50px;
+    }
+    &__card{
+        @include flex-column-center;
+        padding-top: 10px;
+        background-color:$negro-C;
+    }
+    &__card img{
+        object-fit: cover;
+        width: 100%;
+    }
+    &__page-description{
+        @include breakpoint (movil){ 
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        width: 70%;
+        padding-top: 0px;
+        }
+    }
+}
+/* Grafico index*/
+.grafico{
+    background:$negro-B;
+    @include breakpoint (movil){
+    justify-content: center;
+    }
+    &__title{
+        @include flex-column-center;
+        padding-left: 5%;
+        color: #ffffff;
+        font-size: 28px;
+        line-height: 60px; 
+    }
+    &__button{
+        position: relative;
+        margin-top: 50px;
+    }
+    &__card{
+        background-color:$negro-C;
+    }
+    &__card img{
+        object-fit: cover;
+        width: 100%;
+    }
+}
+/* Ecommerce index */
+.ecommerce{
+    background: linear-gradient(184deg, rgba(255,255,255,1) 9%, rgba(234,231,255,1) 100%);
+    @include flex-column-center;
+    align-items: center;
+    @include breakpoint (md){
+    height:800px;
+    }
+    @include breakpoint (tablet){
+    height:650px;
+    }
+    @include breakpoint (movil){
+    height: 470px; 
+    }
+&__title{
+    @include flex-row-center;
+    padding-top:5%;
+    padding-bottom: 15%; 
+    @include breakpoint (tablet){
+    padding-top:5%;
+    padding-bottom: 0%;
+    }
+    @include breakpoint (movil){
+    padding-top:5%;
+    padding-bottom: 0%;
+    }
+}
+&__button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 350px;
+    @include breakpoint (tablet){
+    padding-top:260px;
+    }
+    @include breakpoint (movil){
+    padding-top:140px;   
+    }
+}
+&__card{
+    background-color:$negro-C;
+    height:500px;
+    @include breakpoint (md){
+    margin-top: 6%;
+    height:476px;
+    margin-bottom: 0px;     
+    }
+    @include breakpoint (tablet){
+        margin-top: 25%;
+        height:368px; 
+        margin-bottom: 0px;
+    }
+    @include breakpoint (movil){
+        margin-top: 35%;
+        height:248px; margin-bottom: 0px;
+    }
+}
+&__video{
+    position: absolute;
+    @include size(60%,60%);
+    z-index:1;
+    @include breakpoint (md){
+    position: absolute;
+    padding-left:0%;
+    width: 75%;
+    height: 50%;
+    padding-top:0px;
+    z-index:1;
+    }
+    @include breakpoint (tablet){
+    position: absolute;
+    padding-left:0%;
+    width: 90%;
+    height: 50%;
+    padding-top:-5%;
+   
+    }
+    @include breakpoint (movil){
+        position: absolute;
+        padding-left:0%;
+        width: 80%;
+        height: 30%;
+        padding-top:0px;
+      
+        }
+}
+.breadcrumb-item{
+    color: coral;
+}
+.breadcrumb-item>li{
+    color: coral;
+}
+}

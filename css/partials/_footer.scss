@@ -1,5 +1,6 @@
 /* Footer */
-@import"./partials/variables";
+@import "./mediaqueries";
+@import "./variables";
 .footer{ 
     padding: 5%;
     height:100%;
@@ -7,17 +8,42 @@
 &__column1 {
     color:#fff;
     padding-left: 50px;
+    @include breakpoint (md){
+        width: 40;
+        flex-wrap: wrap;
+        padding-left: 20px;
+        padding-top: 10%;
+    } 
+    @include breakpoint (tablet){
+        list-style:none;
+        padding-top: 10%;
+        padding-bottom: 10%; 
+    } 
 }
 &__column2 {
     padding-left:5%;
     padding-right:10%;
     color:#fff;
+    @include breakpoint (md){
+    padding-top: 10%;
+    padding-right: 1%;
+    } 
  }
 
 &__column3{
     list-style:none;
+    @include breakpoint (md){
+    padding-top: 10%;
+    padding-left:5%;
+   
+    } 
+    @include breakpoint (tablet){
+        list-style:none;
+        padding-left:5%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    } 
 }
-
 &__column3 li a{
     color:#fff;
     text-decoration: none;  

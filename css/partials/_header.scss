@@ -1,0 +1,71 @@
+@import "./mediaqueries";
+@import "./variables";
+@mixin flex-flex-end{
+    display: flex;
+    justify-content: flex-end
+}
+.head{
+    text-align: center;
+    padding:4% 8% 5% 0%;
+    &image{
+        width:100%;
+        padding-left:5%;
+    }
+    @include breakpoint (desktop){ 
+    text-align: center;
+    padding-top:3%;
+    padding-bottom: 5%;
+    padding-right: 10%;
+    padding-left:5% ;     
+    } 
+}
+.header{
+    flex-direction:row;
+    align-items:center;
+&__port{
+    @extend .header;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    @include breakpoint (desktop){ 
+    position: relative;
+    align-items:center;      
+    }
+}
+&__top{
+    @extend .header;
+    @include flex-flex-end;
+    padding:0.6%;
+    background-color:$negro-A;
+    color:white;
+    font-size: 14px;
+    font-weight: 400;
+    @include breakpoint (desktop){ 
+        height: 6%;   
+        }
+    @include breakpoint (movil){ 
+        justify-content: center;   
+        }
+}
+&__top img{
+    margin-left: 1.5rem;
+}
+}
+header ul{
+    @extend .header;
+    @include flex-flex-end;
+    color: white;
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+    margin: 1%; 
+}
+header li a:link, a:visited{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+header ul li a:hover, a:active{
+	color: $morado-A;
+    text-decoration:underline;
+}
