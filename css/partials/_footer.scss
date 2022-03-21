@@ -4,7 +4,7 @@
 .footer{ 
     padding: 5%;
     height:100%;
-    background:$negro-B;
+    background:$negro-G;
 &__column1 {
     color:#fff;
     padding-left: 50px;
@@ -17,8 +17,11 @@
     @include breakpoint (tablet){
         list-style:none;
         padding-top: 10%;
-        padding-bottom: 10%; 
+        padding-bottom: 0%; 
     } 
+    &__column1 i {
+        margin-left: 8px;
+        } 
 }
 &__column2 {
     padding-left:5%;
@@ -54,7 +57,7 @@
 }
 /* Form */
 .form{
-    background-color:$negro-D;
+    background-color:$negro-B;
     padding: 8%;
     border-radius: 10px;
 }

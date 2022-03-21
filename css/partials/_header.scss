@@ -44,11 +44,14 @@
         height: 6%;   
         }
     @include breakpoint (movil){ 
-        justify-content: center;   
+       padding-right: 24px; 
         }
 }
 &__top img{
     margin-left: 1.5rem;
+}
+&__top i{
+    margin-left: 8px;
 }
 }
 header ul{
@@ -68,4 +71,7 @@ header li a:link, a:visited{
 header ul li a:hover, a:active{
 	color: $morado-A;
     text-decoration:underline;
+}
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
+    background-color:$negro-E!important;
 }

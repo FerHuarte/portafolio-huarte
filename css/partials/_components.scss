@@ -32,7 +32,7 @@
 
 /* Hero */
 .hero{
-    background-color:$negro-B; 
+    background-color:$negro-F; 
     &__title{
         @include flex-column-center;
         color:#fff;
@@ -51,10 +51,16 @@
         line-height:56px; 
         width: 100%; 
         }
+        @include breakpoint (tablet){  
+           
+            padding-top:10%;
+            padding-bottom: 10%;
+            }
         @include breakpoint (movil){  
         font-size: 32px;
         line-height: 46px;
         height: 100%;
+        padding-top:10%;
         }
     }
     &__description{
@@ -65,7 +71,7 @@
         font-size: 20px;
         line-height: 36px;
         padding: 5% 0% 5% 0%;
-        @include breakpoint (movil){ 
+        @include breakpoint (md){ 
             text-align: center;
             padding: 16px;
             font-size: 20px;
@@ -74,6 +80,12 @@
     &__buttons{
         display:flexbox;
         flex-direction: row;
+        @include breakpoint (md){ 
+           padding-bottom: 10%;
+            }
+            @include breakpoint (tablet){ 
+                padding-bottom: 0%;
+                 }
         @include breakpoint (movil){ 
         display: flex;
         flex-direction:column;
@@ -91,22 +103,36 @@
         padding-top: 5%;
         width: 90%;     
         }  
-        @include breakpoint (desktop){ 
+        @include breakpoint (tablet){ 
         display: flex;
         justify-content: flex-start;
         padding-top: 5%;
+        padding-bottom: 25%;
         width: 90%; 
-        padding-left: 5%;    
+        padding-left: 2%;    
         }  
         @include breakpoint (movil){ 
         width: 100%;
         height:100%;
+        padding: 16px; 
+        padding-bottom: 5%;
         }   
     }
     &__image div img {
         object-fit: contain; 
     }
 } 
+#hero__desktop{
+    @media only screen and (max-width: 1024px) and (min-width: 0px){
+        display:none;   
+    }     
+}
+#hero__responsive{
+    @media only screen and (max-width: 1440px) and (min-width: 1025px){
+        display:none;   
+    }     
+}
+
 /* Buttons */
 .button{
     @include size(240px,60px);
@@ -202,6 +228,7 @@
         font-weight: 300; 
     }
 }
+
 /* Experiencia index*/
 .experiencia{
     position: relative;
@@ -283,7 +310,7 @@
 }
 /* Producto index*/
 .producto{
-    background:$negro-B;
+    background:$negro-G;
     @include breakpoint (movil){
         padding-top: 20%;
         justify-content: center; 
@@ -294,26 +321,36 @@
         font-size: 28px;
         line-height: 60px;
         padding-left: 5%;
+        @include breakpoint (tablet){
+            padding-top: 10%;
+            padding-bottom: 10%; 
+            align-items: center;
+            text-align: center;  
+            padding-left: 1%;
+            }       
         @include breakpoint (movil){
-        padding-bottom: 20%; 
-        align-items: center;
-        text-align: center;  
-        padding-left: 1%;
         width: 80%;
+        padding-top: 0%;
+        padding-bottom: 15%;
         }       
     }
     &__button{
         position: relative;
         margin-top: 50px;
+        padding-left:0% ;
+        @include breakpoint (movil){ 
+            padding-left: 5%;
+            }
     }
     &__card{
         @include flex-column-center;
         padding-top: 10px;
-        background-color:$negro-C;
+        background-color:$negro-E;
     }
     &__card img{
         object-fit: cover;
         width: 100%;
+    
     }
     &__page-description{
         @include breakpoint (movil){ 
@@ -341,9 +378,13 @@
     &__button{
         position: relative;
         margin-top: 50px;
+        padding-left:0% ;
+        @include breakpoint (movil){ 
+            padding-left: 5%;
+            }
     }
     &__card{
-        background-color:$negro-C;
+        background-color:$negro-E;
     }
     &__card img{
         object-fit: cover;
@@ -352,89 +393,58 @@
 }
 /* Ecommerce index */
 .ecommerce{
-    background: linear-gradient(184deg, rgba(255,255,255,1) 9%, rgba(234,231,255,1) 100%);
-    @include flex-column-center;
-    align-items: center;
-    @include breakpoint (md){
-    height:800px;
-    }
-    @include breakpoint (tablet){
-    height:650px;
-    }
-    @include breakpoint (movil){
-    height: 470px; 
-    }
+    background:$negro-B;
+    justify-content: center;
+    
 &__title{
-    @include flex-row-center;
+    @include flex-column-center;
+    justify-content: center;
+    text-align: center;
     padding-top:5%;
-    padding-bottom: 15%; 
-    @include breakpoint (tablet){
-    padding-top:5%;
-    padding-bottom: 0%;
-    }
+    padding-bottom: 1%; 
     @include breakpoint (movil){
-    padding-top:5%;
-    padding-bottom: 0%;
-    }
+          padding-top: 20%;
+        }
 }
+&__description{
+font-size: 16px;
+color:#fff ;
+text-align: center;
+}
+
 &__button{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 350px;
-    @include breakpoint (tablet){
-    padding-top:260px;
-    }
-    @include breakpoint (movil){
-    padding-top:140px;   
-    }
+    padding-top: 2%;
+    padding-bottom: 2%;
+    
 }
 &__card{
-    background-color:$negro-C;
-    height:500px;
-    @include breakpoint (md){
-    margin-top: 6%;
-    height:476px;
-    margin-bottom: 0px;     
-    }
-    @include breakpoint (tablet){
-        margin-top: 25%;
-        height:368px; 
-        margin-bottom: 0px;
-    }
-    @include breakpoint (movil){
-        margin-top: 35%;
-        height:248px; margin-bottom: 0px;
-    }
-}
-&__video{
-    position: absolute;
-    @include size(60%,60%);
-    z-index:1;
-    @include breakpoint (md){
-    position: absolute;
-    padding-left:0%;
-    width: 75%;
-    height: 50%;
-    padding-top:0px;
-    z-index:1;
-    }
-    @include breakpoint (tablet){
-    position: absolute;
-    padding-left:0%;
-    width: 90%;
-    height: 50%;
-    padding-top:-5%;
+    display: flex;
+  justify-content: center;
    
+   
+}
+& img{
+ padding-top: 2%;
+ width:  100%;
+ padding-bottom: 2%;
+ padding-left: 15%;
+   padding-right: 15%;
+@include breakpoint (tablet){
+ padding-left: 8%;
+   padding-right: 8%;
+ }
+ @include breakpoint (movil){
+    padding-left: 16px;
+      padding-right:16px;
+      padding-top: 5%;
+      padding-bottom: 10%;
     }
-    @include breakpoint (movil){
-        position: absolute;
-        padding-left:0%;
-        width: 80%;
-        height: 30%;
-        padding-top:0px;
-      
-        }
 }
 }
+
+
+

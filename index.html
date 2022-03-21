@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./img/favicon.svg">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script.js"></script>
+   
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +19,7 @@
     ">
     <meta name="keywords"  content="diseñador gráfico, diseñador de productos digitales, tiendas en línea, ecommerce, negocios digitales, ventas digitales, productos digitales, publicidad, publicidad en redes sociales, anuncios en redes sociales, anuncios en instagram, anuncios en facebook, publicidad impresa, páginas web
     ">
+    <script src="https://kit.fontawesome.com/52f85118ee.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <!--Header-->
@@ -24,7 +27,8 @@
         <section class="container-fluid header__port">
         <div class="row">
         <div class="col header__top">
-        <div>Te ayudo a construir e impulsar tu negocio</div> <a href="https://api.whatsapp.com/send?phone=5537621610"> <img src="./img/Whatsapp.svg" alt="Escribir en whatsapp" width="20px"> </a>
+        <div>Enviame un mensaje</div> <a href="https://api.whatsapp.com/send?phone=5537621610"target="_blank"> <i class="fa-brands fa-whatsapp"></i> </a>
+        <a href="https://www.linkedin.com/in/fernanda-huarte/"target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
             </div>
             </div>
         <div class="row">    
@@ -54,62 +58,66 @@
     </header>
  <!--Hero-->
 <main>
-    <section class="container-fluid">
+    <section id="hero__desktop" class="container-fluid">
     <div class="row hero">
     <div class="col-lg-6 hero__title">      
     <span>Diseñadora de  </span> 
    <span class="typewrite" data-period="2000" data-type='[  "productos digitales", "tiendas en línea", "marketing digital" ]'>
       <span class="wrap"></span>
     </span> 
-        <div class="hero__description"> Te ayudo a construir e impulsar tu negocio digital</div>
+        <div class="hero__description">Colaboro con la construcción, crecimiento y escalabilidad de productos digitales centrados en el usuario</div>
         <div class="hero__buttons">
             <a href="https://api.whatsapp.com/send?phone=5537621610"><button class="button__primary">Enviar mensaje</button></a> 
-        <button class="button__secondary"><a href="">Descargar CV</a></button> </div>
+       
+           <a href="./CV FER HUARTE.pdf" target="blank"> <button class="button__secondary">Descargar CV  </button></a></div>
     </div>
-        <div data-aos="zoom-in-left" class="col-lg-6 hero__image"><img class="slide-left" src="./img/hero.png" alt="productos digitales"> </div>   
+        <div data-aos="zoom-in-left" class="col-lg-6 hero__image"><img class="slide-left" src="./img/product design.png" alt="diseño de productos digitales"> </div>   
+    </div>
+  </section>
+  <section id="hero__responsive" class="container-fluid">
+    <div class="row hero">
+    <div class="col-lg-6 hero__title">      
+    <span>Diseñadora de  </span> 
+   <span class="typewrite" data-period="2000" data-type='[  "productos digitales", "tiendas en línea", "marketing digital" ]'>
+      <span class="wrap"></span>
+    </span> 
+        <div class="hero__description">Colaboro con la construcción, crecimiento y escalabilidad de productos digitales centrados en el usuario</div>  
+        <div class="hero__buttons">
+            <a href="https://api.whatsapp.com/send?phone=5537621610"><button class="button__primary">Enviar mensaje</button></a> 
+            <a href="./CV FER HUARTE.pdf" target="blank"> <button class="button__secondary">Descargar CV  </button></a></div>
+
+             
+    </div>
+       
     </div>
   </section>
 </main>
  <!--Body-->
  <body>
-    <section class="container-fluid">
-<div class="row experiencia">
-    <div class="col-lg-4 experiencia__title">
-    <h3 class="h3">EXPERIENCIA</h3>
-    <a href="./vistas/experiencia.html"><button class="button__secondary experiencia__page-button"> Ver más</button> </a>
-</div>
-    <div class="col-lg-8 experiencia__card"> 
-        <div class="experiencia__icons">
-        <div class="experiencia__producto"> <img class="header__top--align" src="./img/experiencia1.svg" alt="" width="200px"> 
-        </div>
-        <div class="experiencia__diseno"> <img class="header__top--align" src="./img/experiencia2.svg" alt="" width="200px"> 
-        </div>
-        <div class="experiencia__ecommerce"> <img class="header__top--align" src="./img/experiencia3.svg" alt="" width="200px"> 
-        </div>
-    </div>
-    </div>
-    </div>
-  </section>
+
   <section class="container-fluid">
 <div class="row producto">
     <div class="col-md-6 producto__title">
     <h5 class="h5">Portafolio de</h5>
     <h2 class="h2">DISEÑO DE PRODUCTO</h2>
-    <div class="producto__button">
+    <p class="producto__page-description">Me apasiona la tecnología y la forma en que las personas interactuamos con ella, es mi gran motivación para diseñar y desarrollar productos usables, amigables y centrados en el usuario
+    <div class="producto__button container-fluid">
     <a href="./vistas/diseno-de-producto.html"><button class="button__terciary">Ver más</button> </a>
     </div></div>
-    <div data-aos="fade-left" class="col-md-6 producto__card"> <img src="./img/portafolio1.jpg" alt="productos digitales"> </div>
+    <div data-aos="zoom-in-left"  class="col-md-6 producto__card container-fluid"> <img src="./img/product-design-konfio.png" alt="productos digitales"> </div>
     </div>
 </div>
 </div>
 </section>
 <section class="container-fluid">
 <div class="row producto">
-    <div data-aos="fade-right" class="col-md-6 order-md-1 col-12 order-2 grafico__card"> <img src="./img/portafolio2.jpg" alt="Imagen placeholder"> </div>
-    <div class="col-md-6 order-md-2 col-12 order-1 producto__title">
+    <div data-aos="zoom-in-left" class="col-md-6 order-md-1 col-12 order-2 grafico__card"> <img src="./img/graphic-design.png" alt="Diseño grafico"> </div>
+    <div class="col-md-6 order-md-2 col-12 order-1 producto__title container-fluid">
     <h5 class="h5">Portafolio de</h5>
     <h2 class="h2">DISEÑO GRÁFICO</h2>
-    <div class="grafico__button">
+    <p class="producto__page-description">Tengo mas de 9 años de experiencia diseñando campañas publicitarias y marketing digital para grandes marcas viviendo una transición en la forma de comunicar a través del tiempo y los cambios culturales
+    </p>
+    <div class="grafico__button container-fluid">
         <a href="./vistas/diseno-grafico.html"><button class="button__terciary">Ver más</button></a>
     </div>
     </div>
@@ -119,15 +127,18 @@
 <div class="row ecommerce">
     <div class="ecommerce__title">
         <h3 class="h3">ECOMMERCE</h3> </div>
-    <iframe data-aos="zoom-in" class="ecommerce__video" src="https://www.youtube.com/embed/k3UevKvP9RU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <div class="ecommerce__card"> 
-    <div class="ecommerce__button">
-        <a href="./vistas/ecommerce.html"><button class="button__secondary">Ver más</button></a></div>
-    </div>
-
+        <p class="ecommerce__description">Contribuyo a impulsar negocios digitales, diseño y desarrollo tiendas en línea
+        </p>  
+        <div class="ecommerce__button">
+            <a href="./vistas/ecommerce.html"><button class="button__secondary">Ver más</button></a></div>
+        <div data-aos="zoom-in-left" class="ecommerce__card" > <img src="./img/ecommerce.png" alt="Tiendas en línea"> </div>
+    </div> 
 </section>
 <script> AOS.init();</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+
 </body>
     <!--Footer-->
 <footer class="footer">
@@ -137,24 +148,27 @@
          
         <h3 class="h3">CONTACTO</h3>
         <p>Cuéntame sobre tu proyecto:</p>
+        <a href="https://api.whatsapp.com/send?phone=5537621610"target="_blank"> <i class="fa-brands fa-whatsapp"></i> </a>
+        <a href="https://www.linkedin.com/in/fernanda-huarte/"target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
         </div>
+
     
         <div class="col-lg-6 footer__column2">  
         
-        <form class="form"action="" method="" enctype="">
-            <div class="formtext">
-            <label id="usersex">Selecciona tu perfil</label> 
-            <div class="elige">
-            <input type="radio" name="campoUserPerfil" id="empresario"required> Tengo una Pyme 
-            </div>
-            <div class="elige">
-            <input type="radio" name="campoUserPerfil" id="reclutador"required> Soy Reclutador
-            </div>
-            <div>
-              <label for="Nombre">Nombre:</label>  
-                <input class="input" type="text" name="" id="" placeholder="Nombre"> 
-            </div>
-            <div>
+            <form class="form"action="" method="" enctype="">
+                <div class="formtext">
+                <label id="usersex">Selecciona tu perfil</label> 
+                <br>
+                <br>
+                <div class="elige">
+                <input type="radio" name="campoUserPerfil" id="empresario"required> Tengo una Pyme 
+                </div>
+                <div class="elige">
+                <input type="radio" name="campoUserPerfil" id="reclutador"required> Soy reclutador
+                </div>
+                <br>
+                <br>
+                <div>
                 <label for="Email">Email:</label>  
                 <input class="input" type="email" name="" id=""placeholder="Email">
             </div>

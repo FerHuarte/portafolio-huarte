@@ -98,7 +98,44 @@
         position: relative;
         margin-top: 50px;
     }
+    &__proyect{
+        color: #fff;
+        background-color: $negro-B;
+       
+    }
+    &__img{ 
+        display:inline-flex;
+       vertical-align:top;
+       
+     }
+    &__proyect-desktop{
+        vertical-align:top;
+      justify-content: center;
+     padding-left: 0%;
+     margin-top: -4%;
+    
+      width: 75%;
+      @include breakpoint (tablet){
+      margin-left: 0%;
+       width: 75%;
+        }
+        @include breakpoint (movil){
+            padding-left: 0%;
+            width: 100%;
+        }  
+    }
+        &__proyect-responsive{
+            margin-top: -2%;
+            vertical-align:top;
+            width: 20%;
+            @include breakpoint (movil){
+                padding-left: 12%;
+                width: 90%;
+       
+    }
 }
+}
+
 
 /* Design page */
 .grafico__page-title{
@@ -106,40 +143,7 @@
     color: #fff; 
     padding-left: 5%;
 }
-#grilla__design{
-    display: grid;
-    position:relative;
-    background: $negro-B;
-    grid-template-rows:400px,100%, 100%, 100%;
-    grid-template-columns:100%, 100%,100%,100%; 
-    grid-template-areas: "header header header header"
-                         "proyecto1 proyecto2 proyecto3 proyecto4"
-                         "proyecto5 proyecto6 proyecto7 proyecto8"
-                         "proyecto9 proyecto10 proyecto11 proyecto12";
-                         @include breakpoint (movil){
-                            grid-template-rows: repeat (auto-fill, 1fr);
-                            grid-template-columns:100%; 
-                            grid-template-areas: "header" 
-                            "proyecto1" "proyecto2" "proyecto3" "proyecto4"
-                            "proyecto5" "proyecto6" "proyecto7" "proyecto8"
-                            "proyecto9" "proyecto10" "proyecto11" "proyecto12";       
-                        }   
-   
-                        @media screen and (max-width: 768px) and (min-width: 426px) {
-        grid-template-rows: repeat (auto-fill, 1fr);
-            grid-template-columns:repeat(2, 1fr); 
-            grid-template-areas: "header header" 
-            "proyecto1 proyecto2" "proyecto3 proyecto4"
-            "proyecto5 proyecto6" "proyecto7 proyecto8"
-            "proyecto9 proyecto10" "proyecto11 proyecto12";
-        } 
-        
-}
-#grilla__design > div > img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-}
+
 
 div#header__design {
     position: flex;
@@ -150,7 +154,7 @@ div#header__design {
  /* Proyect page */
 .nav{
     &-link{
-         color: $negro-B;
+         color: #fff;
     }
     &-link:hover{
        color:coral;
@@ -162,11 +166,59 @@ div#header__design {
     &-pills{
         justify-content: center;
         padding-top: 4%;
-    }
+        color: #fff;  
 }
-
+}
 @media screen and (max-width: 768px) {
     #ecommerce{
         height: 550px;
     } 
     }
+ /* Ecommerce page */
+ .ecommerce__gallery {
+    background-color: $negro-B;
+    padding-left: 15%;
+    padding-right: 15%;
+    @include breakpoint (tablet){
+        margin-left: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+         width: 100%;
+
+        }
+          }
+        
+        
+
+.carousel{
+    margin-left: -3%;
+
+}
+
+.photo-gallery {
+    color:#313437;
+    background-color:$negro-B;
+margin-left: -2.5%;
+  }
+  
+  .photo-gallery .photos {
+    padding-bottom:0px;
+  }
+  
+  .photo-gallery .item {
+    padding-bottom:0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+  .page__hero {
+
+    display: flex;
+    background-color: $negro-B;
+
+    @include breakpoint (md){
+    padding-top:8%;
+    padding-bottom:6%;
+    }  
+} 
+ 
