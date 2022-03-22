@@ -786,7 +786,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
   .producto__page-description {
     font-size: 16px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 24px;
     padding-top: 0px;
   }
 }
@@ -1209,6 +1209,9 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
     padding-left: 8px;
     padding-right: 8px;
     text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
   }
 }
 
