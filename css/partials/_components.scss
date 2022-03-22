@@ -352,6 +352,8 @@
     &__card img{
         object-fit: cover;
         width: 100%;
+        overflow: hidden;
+
     }
     &__page-description{
         @include breakpoint (movil){ 
@@ -391,8 +393,10 @@
     &__card img{
         object-fit: cover;
         width: 100%;
+        overflow: hidden;
     }
-}
+    }
+
 /* Ecommerce index */
 .ecommerce{
     background:$negro-B;
@@ -451,4 +455,13 @@ text-align: center;
     overflow: hidden;
     }
 
-
+    .a {
+        color:#fff;
+        text-decoration: none;
+      
+        &:hover {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    

@@ -749,6 +749,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  overflow: hidden;
 }
 
 @media (max-width: 425px) {
@@ -812,6 +813,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  overflow: hidden;
 }
 
 /* Ecommerce index */
@@ -901,6 +903,16 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
 
 .container-fluid {
   overflow: hidden;
+}
+
+.a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.a:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Footer */
