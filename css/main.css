@@ -907,8 +907,6 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
 
 @media (max-width: 425px) {
   .ecommerce__description {
-    padding-left: 5%;
-    padding-right: 5%;
     text-align: center;
     font-size: 14px;
     font-weight: 300;
