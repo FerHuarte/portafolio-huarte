@@ -114,6 +114,11 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
   background-color: #212529 !important;
 }
 
+.icons {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .icons a:link, a:hover, a:visited {
   color: #ffffff;
   text-decoration: none;
