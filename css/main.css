@@ -191,6 +191,12 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
   font-weight: 300;
 }
 
+@media (max-width: 425px) {
+  .plight {
+    font-size: 14px;
+  }
+}
+
 .head {
   text-align: center;
   padding: 4% 8% 5% 0%;
@@ -297,6 +303,13 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
     text-align: center;
     padding: 16px;
     font-size: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .hero__description {
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 
@@ -791,8 +804,8 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
 
 @media (max-width: 425px) {
   .producto__page-description {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 20px;
     font-weight: 300;
     padding-top: 0px;
   }
@@ -897,6 +910,8 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
+    font-size: 14px;
+    font-weight: 300;
   }
 }
 
@@ -1219,9 +1234,9 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
     padding-left: 8px;
     padding-right: 8px;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
-    line-height: 24px;
+    line-height: 20px;
   }
 }
 

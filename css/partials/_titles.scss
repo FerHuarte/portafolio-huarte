@@ -39,6 +39,8 @@
 }
 .plight{
     @include titlesize(#fff,16px,300);
-   
+    @include breakpoint (movil){
+        font-size: 14px;
+    }
 }
 

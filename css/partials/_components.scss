@@ -76,6 +76,10 @@
             padding: 16px;
             font-size: 20px;
         }
+        @include breakpoint (movil){
+            font-size: 18px;
+            line-height: 28px;
+        }
     }   
     &__buttons{
         display:flexbox;
@@ -365,8 +369,8 @@
         font-size: 16px;
         font-weight: 300;
         @include breakpoint (movil){ 
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 14px;
+        line-height: 20px;
         font-weight: 300;
         padding-top: 0px;
         }
@@ -432,6 +436,8 @@ text-align: center;
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
+    font-size: 14px;
+font-weight: 300;
   }
 }
 
