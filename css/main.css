@@ -742,6 +742,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
           justify-content: center;
   padding-top: 10px;
   background-color: #212529;
+  overflow: hidden;
 }
 
 .producto__card img {
@@ -804,6 +805,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
 
 .grafico__card {
   background-color: #212529;
+  overflow: hidden;
 }
 
 .grafico__card img {
@@ -895,6 +897,10 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
     padding-top: 5%;
     padding-bottom: 10%;
   }
+}
+
+.container-fluid {
+  overflow: hidden;
 }
 
 /* Footer */

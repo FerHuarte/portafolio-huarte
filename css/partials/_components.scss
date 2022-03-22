@@ -346,11 +346,12 @@
         @include flex-column-center;
         padding-top: 10px;
         background-color:$negro-E;
-    }
+        overflow: hidden;
+  }
+    
     &__card img{
         object-fit: cover;
         width: 100%;
-    
     }
     &__page-description{
         @include breakpoint (movil){ 
@@ -360,8 +361,8 @@
         width: 70%;
         padding-top: 0px;
         }
-    }
-}
+    }  }
+
 /* Grafico index*/
 .grafico{
     background:$negro-B;
@@ -385,6 +386,7 @@
     }
     &__card{
         background-color:$negro-E;
+        overflow: hidden;
     }
     &__card img{
         object-fit: cover;
@@ -445,6 +447,8 @@ text-align: center;
     }
 }
 }
-
+.container-fluid {
+    overflow: hidden;
+    }
 
 
