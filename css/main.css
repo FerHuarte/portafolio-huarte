@@ -114,6 +114,11 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
   background-color: #212529 !important;
 }
 
+.icons a:link, a:hover, a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 /* Titulos */
 .h2 {
   color: #f1f1f1;
@@ -907,7 +912,17 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
 
 .a {
   color: #ffffff;
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+.a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.a:not([href]):not([class]), .a:not([href]):not([class]):hover {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 /* Footer */

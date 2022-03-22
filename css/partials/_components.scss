@@ -455,8 +455,20 @@ text-align: center;
     overflow: hidden;
     }
 
-  .a  {
+  .a {
         color: #ffffff;
-        text-decoration: underline;
-    }
+        text-decoration: none;
+        &:hover {
+            color:  #ffffff;
+            text-decoration: none;
+          }
+        }
+        .a:not([href]):not([class]) {
+            &,
+            &:hover {
+              color:#ffffff;
+              text-decoration: none;
+            }
+          }
+          
     
