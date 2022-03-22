@@ -321,6 +321,7 @@
         font-size: 28px;
         line-height: 60px;
         padding-left: 5%;
+        text-align: left;
     
         @include breakpoint (tablet){
             padding-top: 10%;
@@ -332,15 +333,19 @@
         @include breakpoint (movil){
         padding-top: 0%;
         padding-bottom: 15%;
+        text-align: center;
      
         }       
     } 
     &__button{
         @include flex-column-center;
         position: relative;
-        margin-top: 50px;
+        margin-top: 20px;
         padding-left:0% ;
-       
+        @include breakpoint (movil){
+            padding-left:5% ;
+         
+            }       
        
     }
     &__card{
@@ -381,8 +386,12 @@
     }
     &__button{
         position: relative;
-        margin-top: 50px;
+        margin-top: 20px;
         padding-left:0% ;
+        @include breakpoint (movil){
+            padding-left:5% ;
+         
+            }   
        
     }
     &__card{
@@ -409,7 +418,7 @@
     padding-bottom: 1%; 
     @include breakpoint (movil){
           padding-top: 20%;
-          text-align: left;
+          text-align: center;
           padding-left: 5%;
         }
 }
@@ -419,7 +428,8 @@ color:#fff ;
 text-align: center;
 @include breakpoint (movil){
     padding-left: 5%;
-    text-align: left;
+    padding-right: 5%;
+    text-align: center;
   }
 }
 
@@ -432,7 +442,7 @@ text-align: center;
     padding-bottom: 2%;
     @include breakpoint (movil){
         padding-left: 5%;
-       justify-content: left;
+       justify-content: center;
       }
     
 }
