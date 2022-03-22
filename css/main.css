@@ -906,13 +906,8 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
 }
 
 .a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.a:hover {
-  color: #fff;
-  text-decoration: none;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 /* Footer */
