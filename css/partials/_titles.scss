@@ -38,6 +38,7 @@
     }
 }
 .plight{
-    color: white;
+    @include titlesize(#fff,16px,300);
+   
 }
 

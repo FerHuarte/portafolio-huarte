@@ -59,6 +59,8 @@
 .producto{
     &__page{
         display: flex;
+        font-size: 16px;
+        font-weight: 300;
         background-color: $negro-B;
         padding:12% 0% 3% 5%;
         border-bottom-style: solid;
@@ -92,7 +94,7 @@
     }
     &__page-description{
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 24px;
         padding-top: 0px;
         width: 100%;
@@ -105,7 +107,7 @@
             padding-right: 8px;
             text-align: center ;
             font-size: 16px;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 24px;
              
             }   

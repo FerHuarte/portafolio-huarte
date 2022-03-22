@@ -186,7 +186,9 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
 }
 
 .plight {
-  color: white;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .head {
@@ -782,11 +784,16 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
   overflow: hidden;
 }
 
+.producto__page-description {
+  font-size: 16px;
+  font-weight: 300;
+}
+
 @media (max-width: 425px) {
   .producto__page-description {
     font-size: 16px;
-    font-weight: 400;
     line-height: 24px;
+    font-weight: 300;
     padding-top: 0px;
   }
 }
@@ -880,6 +887,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
 
 .ecommerce__description {
   font-size: 16px;
+  font-weight: 300;
   color: #fff;
   text-align: center;
 }
@@ -1142,6 +1150,8 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 16px;
+  font-weight: 300;
   background-color: #1f2023;
   padding: 12% 0% 3% 5%;
   border-bottom-style: solid;
@@ -1192,7 +1202,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
 
 .producto__page-description {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 24px;
   padding-top: 0px;
   width: 100%;
@@ -1210,7 +1220,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
     padding-right: 8px;
     text-align: center;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 24px;
   }
 }

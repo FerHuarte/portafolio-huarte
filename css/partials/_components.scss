@@ -362,11 +362,12 @@
 
     }
     &__page-description{
+        font-size: 16px;
+        font-weight: 300;
         @include breakpoint (movil){ 
         font-size: 16px;
-        font-weight: 400;
         line-height: 24px;
-       
+        font-weight: 300;
         padding-top: 0px;
         }
     }  
@@ -424,6 +425,7 @@
 }
 &__description{
 font-size: 16px;
+font-weight: 300;
 color:#fff ;
 text-align: center;
 @include breakpoint (movil){
