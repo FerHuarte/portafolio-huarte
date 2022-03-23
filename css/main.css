@@ -218,7 +218,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
 @media (max-width: 425px) {
   .plight {
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
   }
 }
@@ -447,6 +447,24 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
 .hero__image div img {
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.hero__page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+@media (max-width: 425px) {
+  .hero__page {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    padding-top: 0px;
+  }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 0px) {
@@ -850,7 +868,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
 @media (max-width: 425px) {
   .producto__page-description {
     font-size: 14px;
-    line-height: 30px;
+    line-height: 20px;
     font-weight: 300;
     padding-top: 0px;
   }
@@ -1347,6 +1365,17 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
 .producto__proyect {
   color: #fff;
   background-color: #1f2023;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+@media (max-width: 425px) {
+  .producto__proyect {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+  }
 }
 
 .producto__img {

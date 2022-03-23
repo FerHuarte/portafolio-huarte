@@ -40,7 +40,7 @@
 .plight{
     @include titlesize(#fff,16px,300);
     @include breakpoint (movil){
-        @include titlesize(#fff,14px,300);
+        @include titlesize(#fff,16px,300);
 }
 }
 .link__movil {
