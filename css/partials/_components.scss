@@ -132,7 +132,7 @@
     
         @include breakpoint (movil){ 
             font-size: 16px;
-            line-height: 20px;
+            line-height: 24px;
             font-weight: 300;
             padding-top: 0px;
             }
@@ -384,7 +384,7 @@
         font-weight: 300;
         @include breakpoint (movil){ 
         font-size: 14px;
-        line-height: 20px;
+        line-height: 24px;
         font-weight: 300;
         padding-top: 0px;
         }
