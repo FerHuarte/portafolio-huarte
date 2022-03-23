@@ -436,10 +436,9 @@ text-align: center;
     padding-top: 0%;
     padding-bottom: 0%;
     font-size: 14px;
-
+    text-align: center;
   }
 }
-
 &__button{
     position: relative;
     display: flex;
@@ -485,18 +484,7 @@ text-align: center;
     overflow: hidden;
     }
 
-    .hidden__movil{
    
-        @media only screen and (max-width: 425px) and (min-width: 0px){
-            display:none;   
-        }     
-    }
-    .hidden__desktop{
-        @media only screen and (max-width: 1440px) and (min-width:426px){
-            display:none;   
-        }         
-    }
-
     .img__movil{ 
         @include flex-column-center; 
         padding:20px 40px 20px 40px; 

@@ -8,6 +8,7 @@
 &__column1 {
     color:#fff;
     padding-left: 50px;
+    font-size: 16px;
     @include breakpoint (md){
         width: 40;
         flex-wrap: wrap;

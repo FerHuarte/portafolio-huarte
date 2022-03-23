@@ -40,8 +40,13 @@
 .plight{
     @include titlesize(#fff,16px,300);
     @include breakpoint (movil){
-        font-size: 14px;
-        font-weight: 300;
-    }
+        @include titlesize(#fff,14px,300);
 }
-
+}
+.link__movil {
+padding-top: 10%;
+    font-size: 14px;
+    font-weight: 300;
+    color: $morado-A;
+    text-align: center;
+}
