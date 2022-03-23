@@ -16,6 +16,18 @@ $breakpoints: (
       }
     }
   }
+  .hidden__movil{
+   
+    @media only screen and (max-width: 425px) and (min-width: 0px){
+        display:none;   
+    }     
+}
+.hidden__desktop{
+    @media only screen and (max-width: 1440px) and (min-width:426px){
+        display:none;   
+    }         
+}
+
   
 
 
