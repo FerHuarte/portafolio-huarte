@@ -862,8 +862,8 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
 }
 
 .producto__card img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 100%;
   overflow: hidden;
   height: 100%;
@@ -927,19 +927,18 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
 }
 
 .grafico__card {
+  background-color: #212529;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #212529;
-  overflow: hidden;
 }
 
 .grafico__card img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 100%;
   overflow: hidden;
   height: 100%;
@@ -1076,7 +1075,6 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 20px 40px 20px 40px;
-  orientation: landscape;
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
