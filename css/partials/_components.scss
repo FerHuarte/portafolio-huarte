@@ -373,8 +373,6 @@
     }
     &__card{
         @include flex-column-center;
-        display: flex;
-        justify-content: center;
         padding-top: 10px;
         background-color:$negro-E;
         overflow: hidden;
@@ -385,7 +383,6 @@
         width: 100%;
         overflow: hidden;
         height: 100%;
-        orientation: landscape;
     }
     &__page-description{
         font-size: 16px;
@@ -432,7 +429,6 @@
         width: 100%;
         overflow: hidden;
         height: 100%;
-        orientation: landscape;
     }
     }
 
@@ -490,11 +486,13 @@ text-align: center;
 }
 & img{
  padding-top: 2%;
- width:  100%;
+
  padding-bottom: 2%;
  padding-left: 15%;
    padding-right: 15%;
+   width:  100%;
    height: 100%;
+  
 
 @include breakpoint (tablet){
  padding-left: 8%;
@@ -506,7 +504,7 @@ text-align: center;
       padding-right:0px;
       padding-top: 5%;
       padding-bottom: 10%;
-      height: 100%;
+     
     }
 }
 }
@@ -517,8 +515,10 @@ text-align: center;
    
     .img__movil{ 
         @include flex-column-center; 
-        padding:20px 40px 20px 40px;
+        aspect-ratio: 16/9;
+        padding:40px 60px 40px 60px;
         width: 100%; 
         height:100%;
         object-fit: contain;
+       
     }
