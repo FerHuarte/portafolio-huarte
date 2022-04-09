@@ -100,12 +100,13 @@
         @include flex-column-center;
         padding: 12% 0% 10% 0% ;
         width: 50%;
-        height:50%;
+        height: auto;
         @include breakpoint (desktop){ 
         display: flex;
         justify-content: flex-start;
         padding-top: 5%;
-        width: 90%;     
+        width: 90%; 
+        height: auto;    
         }  
         @include breakpoint (tablet){ 
         display: flex;
@@ -113,11 +114,12 @@
         padding-top: 5%;
         padding-bottom: 25%;
         width: 90%; 
+        height: auto;
         padding-left: 2%;    
         }  
         @include breakpoint (movil){ 
         width: 100%;
-        height:100%;
+        height: auto;
         padding: 16px; 
         padding-bottom: 5%;
         }   
@@ -370,6 +372,8 @@
     }
     &__card{
         @include flex-column-center;
+        display: flex;
+        justify-content: center;
         padding-top: 10px;
         background-color:$negro-E;
         overflow: hidden;
@@ -417,6 +421,8 @@
        
     }
     &__card{
+        display: flex;
+        justify-content: center;
         background-color:$negro-E;
         overflow: hidden;
     }
