@@ -9,6 +9,7 @@
     padding:4% 8% 5% 0%;
     &image{
         width:100%;
+        height: auto;
         padding-left:5%;
     }
     @include breakpoint (desktop){ 
@@ -49,6 +50,7 @@
 }
 &__top img{
     margin-left: 1.5rem;
+    height: auto;
 }
 &__top i{
     margin-left: 8px;
