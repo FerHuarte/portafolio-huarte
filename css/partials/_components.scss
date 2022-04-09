@@ -357,6 +357,7 @@
         padding-top: 0%;
         padding-bottom: 0%;
         text-align: center;
+        justify-content: center;
      
         }       
     } 
@@ -375,7 +376,7 @@
         @include flex-column-center;
         padding-top: 10px;
         background-color:$negro-E;
-        overflow: hidden;
+       
   }
     
     &__card img{
@@ -515,7 +516,7 @@ text-align: center;
         @include flex-column-center; 
         padding:20px 40px 20px 40px;
        
-        object-fit: inherit;
+        object-fit:none;
         width: 100%; 
         height:100%;
        
