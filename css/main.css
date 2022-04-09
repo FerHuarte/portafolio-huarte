@@ -408,6 +408,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
   padding: 12% 0% 10% 0%;
   width: 50%;
   height: auto;
+  orientation: landscape;
 }
 
 @media (max-width: 1200px) {
@@ -453,6 +454,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
   -o-object-fit: contain;
      object-fit: contain;
   height: auto;
+  orientation: landscape;
 }
 
 .hero__page {
@@ -867,6 +869,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
   width: 100%;
   overflow: hidden;
   height: auto;
+  orientation: landscape;
 }
 
 .producto__page-description {
@@ -942,6 +945,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
   width: 100%;
   overflow: hidden;
   height: auto;
+  orientation: landscape;
 }
 
 /* Ecommerce index */

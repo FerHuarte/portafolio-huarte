@@ -101,6 +101,7 @@
         padding: 12% 0% 10% 0% ;
         width: 50%;
         height: auto;
+        orientation: landscape;
         @include breakpoint (desktop){ 
         display: flex;
         justify-content: flex-start;
@@ -127,6 +128,7 @@
     &__image div img {
         object-fit: contain; 
         height: auto;
+        orientation: landscape;
     }
     &__page {
         display: flex;
@@ -384,6 +386,7 @@
         width: 100%;
         overflow: hidden;
         height: auto;
+        orientation: landscape;
 
     }
     &__page-description{
@@ -431,6 +434,7 @@
         width: 100%;
         overflow: hidden;
         height: auto;
+        orientation: landscape;
     }
     }
 
@@ -493,6 +497,7 @@ text-align: center;
  padding-left: 15%;
    padding-right: 15%;
    height: auto;
+
 @include breakpoint (tablet){
  padding-left: 8%;
    padding-right: 8%;
