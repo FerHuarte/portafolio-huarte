@@ -1074,8 +1074,6 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 20px 40px 20px 40px;
-  -o-object-fit: cover;
-     object-fit: cover;
   width: 100%;
   height: auto;
 }
