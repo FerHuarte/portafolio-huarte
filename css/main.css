@@ -857,11 +857,19 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 10px;
-  background-color: #212529;
+  display: flex;
+  justify-content: center;
 }
 
-.producto__card img {
+@media (max-width: 425px) {
+  .producto__card {
+    padding-top: 0%;
+    padding-top: 10px;
+    background-color: #212529;
+  }
+}
+
+.producto__card__card img {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
@@ -926,13 +934,18 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
 }
 
 .grafico__card {
-  background-color: #212529;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 425px) {
+  .grafico__card {
+    padding-top: 0%;
+  }
 }
 
 .grafico__card img {
