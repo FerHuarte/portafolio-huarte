@@ -36,6 +36,7 @@
     background-color:$negro-F; 
     &__title{
         @include flex-column-center;
+        justify-content: center;
         color:#fff;
         font-weight: 500;
         font-size: 60px;
@@ -333,6 +334,7 @@
 /* Producto index*/
 .producto{
     background:$negro-G;
+    justify-content: center;
     @include breakpoint (movil){
         padding-top: 10%;
         justify-content: center; 
