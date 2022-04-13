@@ -340,6 +340,7 @@
         }       
     &__title{
         @include flex-column-center;
+    justify-content: center;
         color: #ffffff;
         font-size: 28px;
         line-height: 60px;
