@@ -334,7 +334,7 @@
 /* Producto index*/
 .producto{
      @include flex-column-center;
-    background: red;
+    background: $negro-A;
     
     @include breakpoint (movil){
         padding-top: 10%;
