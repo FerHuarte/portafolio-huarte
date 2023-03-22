@@ -271,7 +271,8 @@ padding-left: 5%;
 
 /* Producto index*/
 .producto{
-    background:red;
+	 display: flex;
+    background: #1f2023d;
 }
 .producto__title{
     display: flex;
