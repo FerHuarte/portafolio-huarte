@@ -333,8 +333,8 @@
 }
 /* Producto index*/
 .producto{
-     @include flex-row-center;
-    background:$negro-G;
+     @include flex-column-center;
+    background: red;
     
     @include breakpoint (movil){
         padding-top: 10%;
