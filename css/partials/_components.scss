@@ -376,8 +376,8 @@
        
     }
     &__card{
-        @include flex-column;
-        display: flex;
+         @include flex-column-center;
+    justify-content: center;
        
         @include breakpoint (movil){
           padding-top: 0%;
