@@ -58,7 +58,7 @@
 /* Producto page*/
 .producto{
    
-    @include flexcolumn-center;
+    @include flex-column-center;
     justify-content: center;
     display: flex;
     &__page{
