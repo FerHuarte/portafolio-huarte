@@ -58,8 +58,8 @@
 /* Producto page*/
 .producto{
    
-    @include flexcolumn-center;
-    justify-content: center;
+   
+     display: flex;
     
     &__page{
         display: flex;
