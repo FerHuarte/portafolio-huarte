@@ -333,9 +333,9 @@
 }
 /* Producto index*/
 .producto{
-     @include flex-column-center;
+    display: flex;
     background:$negro-G;
-    justify-content: center;
+    
     @include breakpoint (movil){
         padding-top: 10%;
         justify-content: center; 
