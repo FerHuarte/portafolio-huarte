@@ -740,6 +740,8 @@ align-items: center;
 /* MQ Producto index */
 @media screen and (max-width: 425px) {
 .producto{
+ display: flex;
+    flex-direction:column;
    padding-top: 20%;
    justify-content: center;
 
