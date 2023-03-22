@@ -378,7 +378,7 @@
     &__card{
          @include flex-column-center;
     justify-content: center;
-       
+       display: flex;
         @include breakpoint (movil){
           padding-top: 0%;
         padding-top: 10px;
