@@ -58,9 +58,9 @@
 /* Producto page*/
 .producto{
    
-    @include flex-column-center;
+    @include flexcolumn-center;
     justify-content: center;
-    display: flex;
+    
     &__page{
         display: flex;
         font-size: 16px;
