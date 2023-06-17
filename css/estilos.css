@@ -40,7 +40,7 @@
 header ul{
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: left;
     color: #fff;
     width: 100%;
     list-style: none;
