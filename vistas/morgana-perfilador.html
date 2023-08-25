@@ -105,9 +105,9 @@
       <h5>Conociendo a nuestros usuarios mediante la investigación.
       </h5>
      <ul>
-    <li> Realizando entrevistas con usuarios y encuestas de satisfacción nos dimos cuenta de que había usuarios que elegían una oferta y comenzaban a llenar su solicitud, pero cuando llegaba el momento de enviar su solicitud al banco para la aprobación del crédito, un segmento importante de clientes era rechazado por tener un historial crediticio negativo.
+    <li> Realizando entrevistas con usuarios y encuestas de satisfacción nos dimos cuenta de que había usuarios que elegían una oferta y comenzaban a llenar su solicitud, pero cuando llegaba el momento de enviarlq al banco para la aprobación del crédito, un segmento importante de clientes era rechazado por tener un historial crediticio negativo.
     </li>
-     <li>Esta situación causaba una insatisfacción a los usuarios, tomando en cuenta que la solicitud de un crédito hipotecario tiene más de 150 campos que completar, necesitábamos conocer el historial crediticio de los usuarios antes de iniciar el llenado de solicitud.
+     <li>Esta situación causaba una insatisfacción a los usuarios, tomando en cuenta que la solicitud de un crédito hipotecario tiene más de 150 campos que completar, necesitábamos conocer el historial crediticio antes de iniciar el llenado de solicitud.
      </li>
      <li>Adicionalmente, nuestro equipo de operaciones liberó tiempo y esfuerzo que era dedicado a usuarios que tenían puntos negativos en su historial crediticio.
     </li>
@@ -132,14 +132,12 @@
 <h5>¿Cómo llegan los usuarios a la página, de donde vienen y a dónde queremos que vayan? </h5>
 <br>
 <ul>
-<li>El usuario desconoce el proceso para adquirir un inmueble y un crédito hipotecario.</li>
-<li>Conoce morgana por medio de anuncios en búsquedas de google o redes sociales.</li>
-<li>Llega a la página y no sabe que esperar debido a que morgana brinda un servicio innovador que aún no ha sido adoptado por los usuarios con un patrón de comportamiento conocido.
+<li>El usuario conoce morgana por medio de anuncios en búsquedas de google o redes sociales.</li>
+<li>Llega a la página, cotiza su crédito y obtiene sus ofertas.</li>
+<li>Su siguiente paso es preaprobar, en este proceso vamos a poder conocer el historial crediticio del usuario y con ello mostrarle los bancos que preaprobaron sus ofertas de crédito.
 </li>
-<li>Cotiza su crédito, obtiene las ofertas y siente satisfacción por el resultado obtenido en un tiempo muy reducido; sin embargo, no conoce morgana y esto puede generar desconfianza y que decidan ir directo al banco.
+<li>Si el usuario cuenta con un historial positivo podrá continuar con el llenado de su solicitud digital, en caso contrario no será posible continuar con la solicitud de crédito.
 </li>
-<li>Los usuarios con mayor nivel de uso de la tecnología continúan con su solicitud digital, los que tienen un nivel más bajo en uso de plataformas, prefieren pedir ayuda a un asesor.
-    </li>
  </ul>
 <br><br><br>
 </div>
@@ -147,42 +145,23 @@
 <br><br><br>
 <h5>Creando el prototipo </h5>
 <br>
-<p>
-Comenzamos con wireframes y avanzamos el UI hasta llegar al prototipo, hicimos algunos ajustes con nuestro equipo de producto y operaciones, hicimos algunas pruebas de usuario y llegamos a nuestro producto final:
-</p><br>
-<h6> La cotización en el camino A conociendo el precio del inmueble se completa en 7 pasos: 
+
+<h6> El proceso se completa en solo 6 pasos: 
 </h6>
     <ul>
-<li>Seleccionamos el tipo de crédito.
+<li>Confirmamos los ingresos del usuario que están prellenados con la información que proporciono anteriormente.
 </li>
-<li>Información del inmueble, ubicación y antigüedad.</li>
-<li>Características del crédito, precio de inmueble, enganche, plazo y el monto solicitado se calcula automáticamente.<br>
+<li>Confirmamos Nombres y Apellidos completos con algunos datos prellenados.</li>
+<li>Solicitamos datos de nacimiento, lugar y fecha.<br>
   </li>
-<li>Solicitamos los ingresos del usuario y un campo extra para ingresar los datos de otra persona en caso de compartir el crédito con alguien.<br>
+<li>Pedimos ingresar el domicilio prellenando el estado, ciudad, delegación y colonia con solo completar el código postal.<br>
   </li>
-<li>Pedimos el nombre y apellido para identificar al usuario.<br>
+<li>Calculamos automáticamente el RFC.<br>
   </li>
-<li>Para la creación de la cuenta necesitamos el corro electrónico y número de celular.<br>
-  </li>
-<li>Finalmente, para terminar de crear la cuenta, solicitamos la contraseña y su confirmación.<br>
-  </li>
-</ul>
-<h6> En el camino B para cotizar compartiendo los ingresos mensuales percibidos para conocer el monto máximo de crédito al que el usuario puede acceder:
-</h6>
-<ul>
-<li>Solicitamos los ingresos del usuario y de su coacreditado en caso de tenerlo.<br>
- </li>
-<li>Para identificar al usuario su nombre y apellido.<br>
- </li>
-<li>Su correo y teléfono.<br>
- </li>
-<li>Y la contraseña de su cuenta.<br>
- </li>
-<li>Solicitamos los ingresos del usuario y de su coacreditado en caso de tenerlo.<br>
- </li>
-</ul>
+<li>Pedimos la autorización para consultar el buró de crédito y la verificación celular por seguridad y requisitos legales.<br>
+ 
 <p>
-Al finalizar, los usuarios pueden tener acceso a las ofertas de más de 11 bancos, puede ordenarlas por menor mensualidad o menor tasa, preaprobar su crédito, llenar su solicitud y tramitar.
+Al final el usuario podrá conocer el resultado específico según sea el caso: Aprobado por el monto solicitado, aprobado por un monto mayor, aprobado por un monto menor con posibilidad de unir sus ingresos con un coacreditado. Rechazado por historial crediticio negativo, rechazado por historial crediticio no existente.
 </p>  
  
 <br><br><br>
@@ -193,15 +172,11 @@ Al finalizar, los usuarios pueden tener acceso a las ofertas de más de 11 banco
   ¿Cómo mediremos si nuestro experimento está funcionando y cómo podemos iterar?</h5>
   <br>
   <ul>
-  <li>Conocer el número de clientes que cotizan comparado con el diseño anterior.
+  <li>El perfilador nos permite conocer cuántos de los usuarios que cotizan están dispuestos a pasar por una evaluación de su historial y están realmente interesados en el crédito.
   </li>
-  <li>Conocer el tiempo que tardan los usuarios en completar la cotización.
+  <li>También nos permite conocer la calidad de los leads que están llegando a través de las campañas, midiendo el número de usuarios aprobados vs rechazados, así como el promedio de sus ingresos reales.
   </li>
-  <li>En mapas de calor y grabaciones verificar que los usuarios no encuentren complicaciones en los puntos que ya teníamos identificados.
-  </li>
-  <li>Conocer el tiempo de sesión.
-  </li>
-  <li>Pruebas de usabilidad.
+  <li>Adicionalmente nos permite priorizar la atención de los asesores, dirigiéndonos primero a los clientes que ya tienen la preaprobación de su crédito.
   </li>
 </ul>
   <br><br><br>
