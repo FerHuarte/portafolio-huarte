@@ -480,7 +480,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
   }
 }
 
-@media only screen and (max-width: 1920px) and (min-width: 1025px) {
+@media only screen and (max-width: 1024px) and (min-width: 1025px) {
   #hero__responsive {
     display: none;
   }
