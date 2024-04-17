@@ -12,7 +12,7 @@
   }
 }
 
-@media only screen and (max-width: 1440px) and (min-width: 426px) {
+@media only screen and (max-width: 1201px) and (min-width: 426px) {
   .hidden__desktop {
     display: none;
   }
