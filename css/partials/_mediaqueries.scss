@@ -4,7 +4,7 @@ $breakpoints: (
     "movil":425px,
     "tablet":768px,
     "md":1024px,
-    "desktop":1200px
+    "desktop":1280px
 );
 @mixin breakpoint($name) {
     @if not map-has-key($breakpoints, $name) {
@@ -23,7 +23,7 @@ $breakpoints: (
     }     
 }
 .hidden__desktop{
-    @media only screen and (max-width: 1440px) and (min-width:426px){
+    @media only screen and (max-width: 1441px) and (min-width:426px){
         display:none;   
     }         
 }
